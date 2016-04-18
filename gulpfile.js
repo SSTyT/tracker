@@ -9,9 +9,9 @@ var sh = require('shelljs');
 var templateCache = require('gulp-angular-templatecache');
 
 var paths = {
-  sass: ['./www/**/*.scss'],
   ionSass: ['./scss/**/*.scss'],
-  templates: ['./www/modules/**/*.html']
+  sass: ['./www/modules/**/*.scss', './www/core/**/*.scss'],
+  templates: ['./www/modules/**/*.html', './www/core/**/*.html']
 };
 
 gulp.task('default', ['sass', 'ion-sass', 'template-cache']);
