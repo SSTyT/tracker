@@ -4,7 +4,15 @@ angular.module('tracker')
 
     $stateProvider.state('list', {
       url: '/landing',
-      templateUrl: 'landing/landing.html'
+      templateUrl: 'landing/landing.html',
+      controller: 'LandingCtrl'
     });
 
+  }])
+  .controller('LandingCtrl', ['$scope', '$state', function($scope, $state) {
+    $scope.station = '';
+    $scope.track = function(station) {
+      console.log(station);
+      $state.go('tracking', { station: station });
+    };
   }]);

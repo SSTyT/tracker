@@ -5,7 +5,7 @@ angular.module('tracker')
       restrict: 'E',
       templateUrl: 'stage-timer/stage-timer.html',
       scope: {
-        'title': '@'
+        'title': '='
       },
       controller: 'stageTimerCtrl'
     }
@@ -37,6 +37,3 @@ angular.module('tracker')
       ctrl.running ? ctrl.stop() : ctrl.start();
     }
   }]);
-
-//centisecond
-//Math.floor((millis % 1000) / 10);

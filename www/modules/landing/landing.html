@@ -1,14 +1,13 @@
-<ion-view view-title="Landing">
+<ion-view view-title="Relevamiento Metrobus">
     <ion-content>
-        <!--timer max-time-unit="'minute'" interval="1000">
-            {{mminutes}} minuto{{minutesS}}, {{sseconds}} segundo{{secondsS}}
-        </timer>
-        <timer interval="1000" language="es">{{yearUnit}}</timer-->
-        <div class="row responsive-md">
-            <div class="col"><stage-timer title="Colectivo llegando"></stage-timer></div>
-            <div class="col"><stage-timer title="Personas bajando"></stage-timer></div>
-            <div class="col"><stage-timer title="Personas subiendo"></stage-timer></div>
-            <div class="col"><stage-timer title="Colectivo saliendo"></stage-timer></div>
+        <div class="list list-inset">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Parador</span>
+                <input ng-model="station" type="text" placeholder="Ingrese parador a relevar">
+            </label>
+            <button ng-disabled="!station" ng-click="track(station)" class="button button-block button-positive">
+                Relevar
+            </button>
         </div>
     </ion-content>
 </ion-view>
