@@ -14,7 +14,7 @@ var paths = {
   templates: ['./www/modules/**/*.html', './www/core/**/*.html']
 };
 
-gulp.task('default', ['sass', 'ion-sass', 'template-cache']);
+gulp.task('default', ['sass', 'ion-sass', 'template-cache', 'watch']);
 
 gulp.task('template-cache', function() {
   return gulp.src(paths.templates)
