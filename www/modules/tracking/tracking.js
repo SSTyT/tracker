@@ -14,8 +14,8 @@ angular.module('tracker')
 
     $scope.milestones = [
       milestone.create('Ingresando', false),
-      milestone.create('Detenido', false),
-      milestone.create('Puertas abiertas', false),
+      milestone.create('Detenido', true),
+      milestone.create('Puertas abiertas', true),
       milestone.create('Sube último pasajero', true),
       milestone.create('Sale de estación', false),
     ];

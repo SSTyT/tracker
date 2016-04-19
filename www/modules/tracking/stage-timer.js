@@ -3,7 +3,7 @@ angular.module('tracker')
   .directive('stageTimer', [function() {
     return {
       restrict: 'E',
-      templateUrl: 'stage-timer/stage-timer.html',
+      templateUrl: 'tracking/stage-timer.html',
       scope: {
         'title': '='
       },
