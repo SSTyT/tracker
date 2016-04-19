@@ -9,12 +9,11 @@ var sh = require('shelljs');
 var templateCache = require('gulp-angular-templatecache');
 
 var paths = {
-  ionSass: ['./scss/**/*.scss'],
-  sass: ['./www/modules/**/*.scss', './www/core/**/*.scss'],
-  templates: ['./www/modules/**/*.html', './www/core/**/*.html']
+  sass: ['./www/*.scss','./www/modules/**/*.scss', './www/core/**/*.scss'],
+  templates: ['./www/*.html','./www/modules/**/*.html', './www/core/**/*.html']
 };
 
-gulp.task('default', ['sass', 'ion-sass', 'template-cache', 'watch']);
+gulp.task('default', ['sass', 'template-cache', 'watch']);
 
 gulp.task('template-cache', function() {
   return gulp.src(paths.templates)
@@ -35,22 +34,8 @@ gulp.task('sass', function(done) {
     .on('end', done);
 });
 
-gulp.task('ion-sass', function(done) {
-  gulp.src('./scss/ionic.app.scss')
-    .pipe(sass())
-    .on('error', sass.logError)
-    .pipe(gulp.dest('./www/'))
-    .pipe(minifyCss({
-      keepSpecialComments: 0
-    }))
-    .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('./www/'))
-    .on('end', done);
-});
-
 gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
-  gulp.watch(paths.ionSass, ['ion-sass']);
   gulp.watch(paths.templates, ['template-cache']);
 });
 

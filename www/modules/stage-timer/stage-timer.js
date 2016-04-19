@@ -26,7 +26,7 @@ angular.module('tracker')
       }
       ctrl.running = true;
     };
-    
+
     ctrl.stop = function() {
       ctrl.timer.stop();
       ctrl.running = false;
@@ -37,3 +37,6 @@ angular.module('tracker')
       ctrl.running ? ctrl.stop() : ctrl.start();
     }
   }]);
+
+//centisecond
+//Math.floor((millis % 1000) / 10);
