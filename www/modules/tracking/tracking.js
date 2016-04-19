@@ -10,13 +10,24 @@ angular.module('tracker')
 
   }])
   .controller('TrackingCtrl', ['$scope', '$state', 'milestone', function($scope, $state, milestone) {
+    var ctrl = this;
     $scope.station = $state.params.station;
 
-    $scope.milestones = [
-      milestone.create('Ingresando', false),
-      milestone.create('Detenido', true),
-      milestone.create('Puertas abiertas', true),
-      milestone.create('Sube último pasajero', true),
-      milestone.create('Sale de estación', false),
-    ];
+    ctrl.resetState = function() {
+      //recreo hitos
+      $scope.milestones = [
+        milestone.create('Ingresando', false),
+        milestone.create('Detenido', true),
+        milestone.create('Puertas abiertas', true),
+        milestone.create('Sube último pasajero', true),
+        milestone.create('Sale de estación', false),
+      ];
+
+      ctrl.state = {
+        tracking: false,
+        milestoneIndex: 0
+      }
+    };
+
+    ctrl.resetState();
   }]);
