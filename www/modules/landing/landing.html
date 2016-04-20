@@ -1,13 +1,11 @@
 <ion-view view-title="Relevamiento Metrobus">
     <ion-content>
-        <div class="list list-inset">
+        <div class="list">
             <label class="item item-input item-stacked-label">
                 <span class="input-label">Parador</span>
                 <input ng-model="station" type="text" placeholder="Ingrese parador a relevar">
             </label>
-            <button ng-disabled="!station" on-tap="track(station)" class="button button-block button-dark">
-                Relevar
-            </button>
         </div>
+        <button ng-disabled="!station" on-tap="track(station)" class="button button-full button-dark">Relevar</button>
     </ion-content>
 </ion-view>

@@ -23,62 +23,50 @@ angular.module('tracker')
       ];
 
       ctrl.state = {
-        tracking: false,
         milestoneIndex: 0,
         finished: false
       }
-      $scope.startTime = null;
+
+      $scope.data = {};
     };
 
+    ctrl.nextMilestone = function() {
+      if ($scope.milestones.length - 1 == ctrl.state.milestoneIndex) {
+        ctrl.state.finished = true;
+      } else {
+        ctrl.state.milestoneIndex++;
+      }
+    }
 
     $scope.station = $state.params.station;
     $scope.buttons = {
-      start: function() {
-        return !ctrl.state.tracking && !ctrl.state.finished;
-      },
       register: function() {
-        return ctrl.state.tracking;
+        return !ctrl.state.finished;
       },
       skip: function() {
-        return $scope.milestones[ctrl.state.milestoneIndex].skippable;
+        return !ctrl.state.finished && $scope.milestones[ctrl.state.milestoneIndex].skippable;
       },
       cancel: function() {
         return ctrl.state.finished;
       },
-      next: function() {
+      save: function() {
         return ctrl.state.finished;
       },
-      onStart: function() {
-        $scope.milestones[0].active = true;
-        ctrl.state.tracking = true;
-        $scope.startTime = moment().toISOString();
-      },
       onRegister: function() {
-        $scope.milestones[ctrl.state.milestoneIndex].active = false;
-        if ($scope.milestones.length - 1 == ctrl.state.milestoneIndex) {
-          ctrl.state.finished = true;
-          ctrl.state.tracking = false;
-        } else {
-          ctrl.state.milestoneIndex++;
-          $scope.milestones[ctrl.state.milestoneIndex].active = true;
-        }
+        $scope.milestones[ctrl.state.milestoneIndex].completed = true;
+        ctrl.nextMilestone();
       },
       onSkip: function() {
-        $scope.milestones[ctrl.state.milestoneIndex].active = false;
+        $scope.milestones[ctrl.state.milestoneIndex].completed = true;
         $scope.milestones[ctrl.state.milestoneIndex].skipped = true;
-        if ($scope.milestones.length - 1 == ctrl.state.milestoneIndex) {
-          ctrl.state.finished = true;
-          ctrl.state.tracking = false;
-        } else {
-          ctrl.state.milestoneIndex++;
-          $scope.milestones[ctrl.state.milestoneIndex].active = true;
-        }
+        ctrl.nextMilestone();
       },
       onCancel: function() {
         ctrl.resetState();
       },
-      onNext: function() {
-        //TODO state.go
+      onSave: function() {
+        //TODO save
+        console.log($scope.data);
       }
     }
 

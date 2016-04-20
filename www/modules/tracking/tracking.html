@@ -1,16 +1,34 @@
 <ion-view class="tracking" view-title="Parador: {{station}}">
     <ion-content>
-        <div class="row" ng-repeat="milestone in milestones">
-            <stage-timer class="col" start-time="startTime" stage="milestone"></stage-timer>
+        <div class="list">
+            <milestone-registry ng-repeat="milestone in milestones" milestone="milestone"></milestone-registry>
+            <div ng-show="buttons.save()" class="form-data">
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Pasajeros Ascendidos</span>
+                    <input ng-model="data.ascended" type="number" placeholder="0">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Pasajeros Descendidos</span>
+                    <input ng-model="data.descended" type="number" placeholder="0">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Línea</span>
+                    <input ng-model="data.line" type="number" placeholder="Línea">
+                </label>
+                <label class="item item-input item-stacked-label">
+                    <span class="input-label">Observaciones</span>
+                    <textarea ng-model="data.comment" rows="3" placeholder="Observaciones">
+                    </textarea>
+                </label>
+            </div>
         </div>
     </ion-content>
     <ion-footer-bar class="track-buttons">
         <div class="button-bar">
-            <a ng-if="buttons.start()" on-tap="buttons.onStart()" class="button button-balanced">Comenzar</a>
             <a ng-if="buttons.skip()" on-tap="buttons.onSkip()" class="button button-energized">Saltear</a>
             <a ng-if="buttons.register()" on-tap="buttons.onRegister()" class="button button-balanced">Marcar</a>
             <a ng-if="buttons.cancel()" on-tap="buttons.onCancel()" class="button button-assertive">Cancelar</a>
-            <a ng-if="buttons.next()" on-tap="buttons.onNext()" class="button button-balanced">Siguente</a>
+            <a ng-if="buttons.save()" on-tap="buttons.onSave()" class="button button-balanced">Guardar</a>
         </div>
     </ion-footer-bar>
 </ion-view>

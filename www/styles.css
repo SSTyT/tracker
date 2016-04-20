@@ -9735,10 +9735,13 @@ a.button {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px; }
+  height: 57px; }
   .tracking .track-buttons .button {
     line-height: 45px;
-    font-size: 1.25em; }
+    font-size: 19px; }
 
-.tracking .timer {
-  margin: 0; }
+.tracking .milestone input[readonly] {
+  background-color: white; }
+
+.tracking .milestone .times {
+  text-align: center; }
