@@ -1,10 +1,10 @@
-<ion-view view-title="Parador: {{station}}">
+<ion-view class="tracking" view-title="Parador: {{station}}">
     <ion-content>
         <div class="row" ng-repeat="milestone in milestones">
             <stage-timer class="col" start-time="startTime" stage="milestone"></stage-timer>
         </div>
     </ion-content>
-    <ion-footer-bar align-title="left" class="bar-light">
+    <ion-footer-bar class="track-buttons">
         <div class="button-bar">
             <a ng-if="buttons.start()" on-tap="buttons.onStart()" class="button button-balanced">Comenzar</a>
             <a ng-if="buttons.skip()" on-tap="buttons.onSkip()" class="button button-energized">Saltear</a>

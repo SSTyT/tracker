@@ -9731,5 +9731,14 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.timer {
+.tracking .track-buttons {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; }
+  .tracking .track-buttons .button {
+    line-height: 45px;
+    font-size: 1.25em; }
+
+.tracking .timer {
   margin: 0; }
