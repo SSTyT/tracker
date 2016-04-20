@@ -323,7 +323,7 @@
 .bar-energized {
   .button {
     @include button-style($bar-energized-bg, $bar-energized-border, $bar-energized-active-bg, $bar-energized-active-border, $bar-energized-text);
-    @include button-clear(#fff, $bar-title-font-size);
+    @include button-clear(#111, $bar-title-font-size);
   }
 }
 .bar-royal {

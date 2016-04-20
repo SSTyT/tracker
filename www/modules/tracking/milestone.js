@@ -11,7 +11,8 @@ angular.module('tracker')
       title: '',
       skippable: false,
       skipped: false,
-      time: '0'
+      time: '0',
+      active: false
     }
 
     return {

@@ -5,7 +5,8 @@ angular.module('tracker')
       restrict: 'E',
       templateUrl: 'tracking/stage-timer.html',
       scope: {
-        'title': '='
+        'stage': '=',
+        'startTime': '='
       },
       controller: 'stageTimerCtrl'
     }
@@ -32,8 +33,20 @@ angular.module('tracker')
       ctrl.running = false;
     };
 
+    $scope.showTimer = false;
 
-    $scope.tap = function() {
-      ctrl.running ? ctrl.stop() : ctrl.start();
-    }
+    $scope.$watch('stage.active', function() {
+      if ($scope.stage.active) {
+        ctrl.start();
+        $scope.showTimer = true;
+      } else {
+        ctrl.stop();
+      }
+    }, false);
+
+    $scope.$watch('stage.skipped', function() {
+      if ($scope.stage.skipped) {
+        $scope.showTimer = false;
+      }
+    }, false);
   }]);

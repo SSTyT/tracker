@@ -1,10 +1,12 @@
 <div class="card timer" on-tap="tap()">
-    <div class="item item-divider">
-        {{title}}
-    </div>
-    <div class="item item-text-wrap">
-        <timer class="clock" autostart="false" max-time-unit="'minute'" interval="1000">
-            {{mminutes}}:{{sseconds}}
-        </timer>
+    <div class="row">
+        <div class="col col-75">
+            {{stage.title}}
+        </div>
+        <div class="col col-25">
+            <timer ng-show="showTimer" class="clock" autostart="false" start-time="startTime" max-time-unit="'minute'" interval="1000">
+                {{mminutes}}:{{sseconds}}
+            </timer>
+        </div>
     </div>
 </div>

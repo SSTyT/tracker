@@ -1,13 +1,16 @@
 <ion-view view-title="Parador: {{station}}">
     <ion-content>
         <div class="row" ng-repeat="milestone in milestones">
-            <stage-timer class="col" title="milestone.title"></stage-timer>
+            <stage-timer class="col" start-time="startTime" stage="milestone"></stage-timer>
         </div>
     </ion-content>
-    <ion-footer-bar align-title="left" class="bar-dark">
+    <ion-footer-bar align-title="left" class="bar-light">
         <div class="button-bar">
-            <a class="button">Siguiente</a>
-            <a class="button">Saltear</a>
+            <a ng-if="buttons.start()" on-tap="buttons.onStart()" class="button button-balanced">Comenzar</a>
+            <a ng-if="buttons.skip()" on-tap="buttons.onSkip()" class="button button-energized">Saltear</a>
+            <a ng-if="buttons.register()" on-tap="buttons.onRegister()" class="button button-balanced">Marcar</a>
+            <a ng-if="buttons.cancel()" on-tap="buttons.onCancel()" class="button button-assertive">Cancelar</a>
+            <a ng-if="buttons.next()" on-tap="buttons.onNext()" class="button button-balanced">Siguente</a>
         </div>
     </ion-footer-bar>
 </ion-view>
