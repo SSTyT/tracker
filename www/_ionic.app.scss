@@ -15,13 +15,19 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
-$dark:                            #111 !default;
-$energized:                       #ffc300 !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
-$ionicons-font-path: "../lib/ionic/fonts" !default;
-$font-family-base: "OpenSans", sans-serif !default;
+$ionicons-font-path: "lib/ionic/fonts" !default;
+
+//Overrides
+$font-family-sans-serif:       'OpenSans', "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
+$font-family-light-sans-serif: 'OpenSans', "HelveticaNeue-Light", "Roboto-Light", "Segoe UI-Light", sans-serif-light !default;
+$headings-font-family: "Gotham", sans-serif !default;
+
+$dark:                            #111 !default;
+$energized:                       #ffd300 !default;
+$button-energized-text:           $dark !default;
 
 // Include all of Ionic
-@import "www/lib/ionic/scss/ionic";
+@import "lib/ionic/scss/ionic";
 

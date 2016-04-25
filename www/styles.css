@@ -28,8 +28,8 @@ $dark:                            #444 !default;
 */
 @font-face {
   font-family: "Ionicons";
-  src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1");
-  src: url("../lib/ionic/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("../lib/ionic/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("../lib/ionic/fonts/ionicons.woff?v=2.0.1") format("woff"), url("../lib/ionic/fonts/ionicons.woff") format("woff"), url("../lib/ionic/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
+  src: url("lib/ionic/fonts/ionicons.eot?v=2.0.1");
+  src: url("lib/ionic/fonts/ionicons.eot?v=2.0.1#iefix") format("embedded-opentype"), url("lib/ionic/fonts/ionicons.ttf?v=2.0.1") format("truetype"), url("lib/ionic/fonts/ionicons.woff?v=2.0.1") format("woff"), url("lib/ionic/fonts/ionicons.woff") format("woff"), url("lib/ionic/fonts/ionicons.svg?v=2.0.1#Ionicons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -3339,7 +3339,7 @@ body,
   word-wrap: break-word;
   font-size: 14px;
   font-family: -apple-system;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
   line-height: 20px;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
@@ -3597,7 +3597,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #000;
   font-weight: 500;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Gotham", sans-serif;
   line-height: 1.2; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
@@ -4225,7 +4225,7 @@ a.subdued {
     border-color: transparent;
     background: none;
     box-shadow: none;
-    color: #111;
+    color: #fff;
     font-size: 17px; }
   .bar-energized .button.button-icon {
     border-color: transparent;
@@ -5070,7 +5070,7 @@ ion-tabs.tabs-color-active-dark .tab-item {
   white-space: nowrap;
   font-weight: 400;
   font-size: 14px;
-  font-family: "-apple-system", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
+  font-family: "OpenSans", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif;
   opacity: 0.7; }
   .tab-item:hover {
     cursor: pointer; }
@@ -7494,7 +7494,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "OpenSans", sans-serif; }
+  font-family: "OpenSans", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif; }
 
 .item-input {
   display: -webkit-box;
@@ -9742,6 +9742,20 @@ a.button {
   font-style: normal;
   font-weight: normal;
   src: url("fonts/OpenSans.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans.woff") format("woff"), url("fonts/OpenSans.ttf") format("truetype"), url("fonts/OpenSans.svg#OpenSans") format("svg"); }
+
+ion-header-bar {
+  font-family: "Gotham", sans-serif; }
+
+.bar-energized .button.button-clear {
+  border-color: transparent;
+  background: none;
+  box-shadow: none;
+  color: #111;
+  font-size: 17px; }
+
+.bar-energized .button.button-icon {
+  border-color: transparent;
+  background: none; }
 
 .tracking .track-buttons {
   position: absolute;

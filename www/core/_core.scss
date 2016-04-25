@@ -17,3 +17,13 @@
     	 url("fonts/OpenSans.ttf") format("truetype"), 
     	 url("fonts/OpenSans.svg#OpenSans") format("svg");
 }
+
+ion-header-bar{
+    font-family: $headings-font-family;
+}
+
+.bar-energized {
+  .button {
+    @include button-clear($dark, $bar-title-font-size);
+  }
+}
