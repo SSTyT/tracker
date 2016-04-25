@@ -9,8 +9,8 @@ angular.module('tracker')
     });
 
   }])
-  .controller('TrackingCtrl', ['$scope', '$state', 'milestone', 'fileStorage',
-    function($scope, $state, milestone, fileStorage) {
+  .controller('TrackingCtrl', ['$scope', '$state', 'milestone', 'saveRegister',
+    function($scope, $state, milestone, saveRegister) {
       var ctrl = this;
 
       ctrl.resetState = function() {
@@ -66,8 +66,7 @@ angular.module('tracker')
           ctrl.resetState();
         },
         onSave: function() {
-          //TODO save
-          console.log($scope.data);
+          saveRegister($scope.station, $scope.milestones, $scope.data);
         }
       }
 

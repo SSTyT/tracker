@@ -12,7 +12,6 @@ angular.module('tracker')
   .controller('LandingCtrl', ['$scope', '$state', function($scope, $state) {
     $scope.station = '';
     $scope.track = function(station) {
-      console.log(station);
       $state.go('tracking', { station: station });
     };
   }]);
