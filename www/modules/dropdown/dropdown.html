@@ -1,0 +1,12 @@
+<label class="item item-input item-floating-label">
+    <span class="input-label">{{title}}</span>
+    <input ng-model="field" type="text" placeholder="{{title}}">
+</label>
+<ion-scroll class="results" direction="y" ng-show="!picked && field">
+    <ul class="list">
+        <li ng-repeat="item in list | filter:{ name:field } track by $index" class="item" ng-click="pick(item)">
+            <h2>{{item.name}}</h2>
+            <p ng-if="description">{{item[description]}}</p>
+        </li>
+    </ul>
+</ion-scroll>

@@ -16,7 +16,7 @@ angular.module('tracker')
       line += (formData.descended || '') + ';';
       line += (formData.ascended || '') + ';';
       line += (formData.line || '') + ';';
-      line += (formData.comment || '') + '\n';
+      line += (formData.comment.replace(/\n/gi) || '') + '\n';
 
       return line;
     }

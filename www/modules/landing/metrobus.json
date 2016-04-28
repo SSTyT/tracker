@@ -1,0 +1,1270 @@
+[{
+  "id": 1,
+  "name": "Liniers",
+  "intersection": "VIEDMA FRANCISCO & CASCO",
+  "linesNorth": ["34","109","166"],
+  "linesSouth": ["34","109","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,85261125180662E+016",
+  "lat": "-3,46382666941642E+016"
+}, {
+  "id": 2,
+  "name": "Velez Sarsfield",
+  "intersection": "JUSTO JUAN B. & JONTE ALVAREZ",
+  "linesNorth": ["34","99","166","172"],
+  "linesSouth": ["34","99","166","172"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,85201431945337E+016",
+  "lat": "-3,46334969244227E+016"
+}, {
+  "id": 3,
+  "name": "Polideportivo Velez Sarsfield",
+  "intersection": "JUSTO JUAN B. & GARCIA JUAN AGUSTIN",
+  "linesNorth": ["34","99","166","172"],
+  "linesSouth": ["34","99","166","172"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,85139131011658E+016",
+  "lat": "-3,46334578210612E+016"
+}, {
+  "id": 4,
+  "name": "Cortina",
+  "intersection": "JUSTO JUAN B. & CORTINA",
+  "linesNorth": ["34","99","166","172"],
+  "linesSouth": ["34","99","166","172"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,85067296377909E+016",
+  "lat": "-3,46343410770951E+016"
+}, {
+  "id": 5,
+  "name": "Av. Lope de Vega",
+  "intersection": "JUSTO JUAN B. & LOPE DE VEGA",
+  "linesNorth": ["34","99","166","172"],
+  "linesSouth": ["34","99","166","172"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,85010420987764E+016",
+  "lat": "-3,46322077867751E+016"
+}, {
+  "id": 6,
+  "name": "Carrasco",
+  "intersection": "JUSTO JUAN B. & CARRASCO",
+  "linesNorth": ["34","99","166","172"],
+  "linesSouth": ["34","99","166","172"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,849485369658E+015",
+  "lat": "-3,46295372757777E+016"
+}, {
+  "id": 7,
+  "name": "Av. Segurola",
+  "intersection": "JUSTO JUAN B. & SEGUROLA",
+  "linesNorth": ["34","99","166","172"],
+  "linesSouth": ["34","99","166","172"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84910956462596E+015",
+  "lat": "-3,46270110382807E+016"
+}, {
+  "id": 8,
+  "name": "Chivilcoy",
+  "intersection": "JUSTO JUAN B. & CHIVILCOY",
+  "linesNorth": ["34","166"],
+  "linesSouth": ["34","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84859240774451E+016",
+  "lat": "-3,46251438295209E+016"
+}, {
+  "id": 9,
+  "name": "Concordia",
+  "intersection": "JUSTO JUAN B. & CONCORDIA",
+  "linesNorth": ["34","166"],
+  "linesSouth": ["34","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84808176437685E+016",
+  "lat": "-3,46220415597566E+015"
+}, {
+  "id": 10,
+  "name": "Av. Nazca",
+  "intersection": "JUSTO JUAN B. & NAZCA",
+  "linesNorth": ["34","166"],
+  "linesSouth": ["34","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84760963333816E+016",
+  "lat": "-3,4618102594928E+016"
+}, {
+  "id": 11,
+  "name": "Artigas",
+  "intersection": "JUSTO JUAN B. & ARTIGAS JOSE GERVASIO GRAL",
+  "linesNorth": ["34","166"],
+  "linesSouth": ["34","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84722554943843E+016",
+  "lat": "-3,4613823969987E+016"
+}, {
+  "id": 12,
+  "name": "Boyaca",
+  "intersection": "JUSTO JUAN B. & BOYACA",
+  "linesNorth": ["34","110","166"],
+  "linesSouth": ["34","110","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84678482157915E+015",
+  "lat": "-3,4611303822593E+016"
+}, {
+  "id": 13,
+  "name": "Av. Donato Alvarez",
+  "intersection": "JUSTO JUAN B. & ALVAREZ DONATO Tte. Gral.",
+  "linesNorth": ["34","110","166"],
+  "linesSouth": ["34","110","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84627046318664E+016",
+  "lat": "-3,46073730118522E+016"
+}, {
+  "id": 14,
+  "name": "Av. San Martín",
+  "intersection": "JUSTO JUAN B. & SAN MARTIN AV.",
+  "linesNorth": ["34","109","110","166"],
+  "linesSouth": ["34","109","110","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84584739249979E+016",
+  "lat": "-3,46044918450724E+016"
+}, {
+  "id": 15,
+  "name": "Av. Honorio Pueyrredón",
+  "intersection": "JUSTO JUAN B. & PUEYRREDON HONORIO DR.",
+  "linesNorth": ["34","109","166"],
+  "linesSouth": ["34","109","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,8452052278349E+016",
+  "lat": "-3,46001204426672E+016"
+}, {
+  "id": 16,
+  "name": "Murillo",
+  "intersection": "JUSTO JUAN B. & MURILLO",
+  "linesNorth": ["34","109","166"],
+  "linesSouth": ["34","109","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84476901038276E+016",
+  "lat": "-3,45970914095638E+016"
+}, {
+  "id": 17,
+  "name": "Av. Corrientes",
+  "intersection": "JUSTO JUAN B. & CORRIENTES",
+  "linesNorth": ["34","166"],
+  "linesSouth": ["34","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84443001538469E+015",
+  "lat": "-3,45947640307614E+016"
+}, {
+  "id": 18,
+  "name": "Aguirre",
+  "intersection": "JUSTO JUAN B. & AGUIRRE",
+  "linesNorth": ["34","166"],
+  "linesSouth": ["34","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,844070301864E+016",
+  "lat": "-3,45922669285898E+016"
+}, {
+  "id": 20,
+  "name": "Honduras",
+  "intersection": "JUSTO JUAN B. & HONDURAS",
+  "linesNorth": ["34","166"],
+  "linesSouth": ["34","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,8434753212275E+016",
+  "lat": "-3,4585372194959E+016"
+}, {
+  "id": 21,
+  "name": "Guatemala",
+  "intersection": "JUSTO JUAN B. & GUATEMALA",
+  "linesNorth": ["34","166"],
+  "linesSouth": ["34","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84300412553974E+016",
+  "lat": "-3,45818796847831E+016"
+}, {
+  "id": 23,
+  "name": "Pacífico",
+  "intersection": "BULLRICH INT AV & SANTA FE",
+  "linesNorth": ["34","166"],
+  "linesSouth": ["34","166"],
+  "metrobus": "Metrobus Juan B. Justo",
+  "lng": "-5,84265153540626E+016",
+  "lat": "-3,45775832414406E+016"
+}, {
+  "id": 27,
+  "name": "Estados Unidos",
+  "intersection": "Entre Carlos Calvo y Estados Unidos",
+  "linesNorth": ["10","17","59"],
+  "linesSouth": ["59","10","17"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83808540572395E+016",
+  "lat": "-3,46188767140538E+016"
+}, {
+  "id": 28,
+  "name": "Independencia",
+  "intersection": "Entre Estados Unidos e Independencia",
+  "linesNorth": ["45","70"],
+  "linesSouth": ["45","70"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83808827691278E+016",
+  "lat": "-3,46178904773705E+016"
+}, {
+  "id": 29,
+  "name": "Chile",
+  "intersection": "Entre Independencia y Chile",
+  "linesNorth": ["9","91","100"],
+  "linesSouth": ["100","9", "91"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83809449927938E+016",
+  "lat": "-3,46166794883139E+016"
+}, {
+  "id": 30,
+  "name": "México",
+  "intersection": "Entre Chile y México",
+  "linesNorth": ["67","98","129"],
+  "linesSouth": ["67","129"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83809905284026E+016",
+  "lat": "-3,46155097729597E+016"
+}, {
+  "id": 31,
+  "name": "Venezuela",
+  "intersection": "Entre México y Venezuela",
+  "linesNorth": ["10","17","59"],
+  "linesSouth": ["59","10","17"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83810303569449E+016",
+  "lat": "-3,46145006069406E+016"
+}, {
+  "id": 32,
+  "name": "Belgrano",
+  "intersection": "Entre Venezuela y Belgrano",
+  "linesNorth": ["45","70","100"],
+  "linesSouth": ["100","45","70"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83810424601934E+016",
+  "lat": "-3,4613473073224E+016"
+}, {
+  "id": 33,
+  "name": "Alsina",
+  "intersection": "Entre Moreno y Alsina",
+  "linesNorth": ["129"],
+  "linesSouth": ["129"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,8381171727514E+016",
+  "lat": "-3,4611070891371E+016"
+}, {
+  "id": 34,
+  "name": "Yrigoyen",
+  "intersection": "Entre Alsina e Hipólito Yrigoyen",
+  "linesNorth": ["9","91","67"],
+  "linesSouth": ["67","9","91"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83812555665489E+016",
+  "lat": "-3,4609944087864E+016"
+}, {
+  "id": 35,
+  "name": "Mitre",
+  "intersection": "Entre Rivadavia y Bartolomé Mitro",
+  "linesNorth": ["10","17","59"],
+  "linesSouth": ["59","10","17"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83813918661665E+015",
+  "lat": "-3,46075846089841E+016"
+}, {
+  "id": 36,
+  "name": "Juan D. Perón",
+  "intersection": "Entre Bartolomé Mitre y Perón",
+  "linesNorth": ["45","70","100"],
+  "linesSouth": ["100","45","70"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83814587397799E+016",
+  "lat": "-3,46064568154422E+016"
+}, {
+  "id": 37,
+  "name": "Obelisco Sur",
+  "intersection": "Entre Juan D. Perón y Sarmiento",
+  "linesNorth": ["9","67","129"],
+  "linesSouth": ["9","67","129"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83815394202476E+016",
+  "lat": "-3,46053778858848E+016"
+}, {
+  "id": 38,
+  "name": "Obelisco Norte",
+  "intersection": "Entre Lavalle y Tucumán",
+  "linesNorth": ["100","17","59"],
+  "linesSouth": ["59","100","17"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83817535578343E+016",
+  "lat": "-3,46017254419825E+016"
+}, {
+  "id": 39,
+  "name": "Teatro Colón",
+  "intersection": "Entre Tucumán y Viamonte",
+  "linesNorth": ["45","70","10"],
+  "linesSouth": ["10","45","70"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83818123103929E+016",
+  "lat": "-3,46005804300295E+016"
+}, {
+  "id": 40,
+  "name": "Córdoba",
+  "intersection": "Entre Viamonte y Av Córdoba",
+  "linesNorth": ["67"],
+  "linesSouth": ["67","9"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83818550522951E+016",
+  "lat": "-3,45994274672618E+016"
+}, {
+  "id": 41,
+  "name": "Paraguay",
+  "intersection": "Entre Av Córdoba y Paraguay",
+  "linesNorth": ["10","17","59"],
+  "linesSouth": ["59","10","17"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83818950222302E+016",
+  "lat": "-3,45982531573038E+015"
+}, {
+  "id": 42,
+  "name": "Marcelo T. de Alvear",
+  "intersection": "Entre Paraguay y Marcelo T. de Alvear",
+  "linesNorth": ["129"],
+  "linesSouth": ["129"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83820015194344E+016",
+  "lat": "-3,45971201763965E+016"
+}, {
+  "id": 43,
+  "name": "Santa Fe",
+  "intersection": "Entre Marcelo T. de Alvear y Av. Santa Fe",
+  "linesNorth": ["100","70","67"],
+  "linesSouth": ["100","70","67"],
+  "metrobus": "Metrobus 9 de Julio",
+  "lng": "-5,83821303401801E+016",
+  "lat": "-3,4595845005054E+016"
+}, {
+  "id": 44,
+  "name": "Constitución",
+  "intersection": "",
+  "linesNorth": [""],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur",
+  "lng": "-5,83796123628576E+016",
+  "lat": "-3,46277806223165E+016"
+}, {
+  "id": 45,
+  "name": "Combate de los Pozos",
+  "intersection": "Entre Combate de los Pozos y Entre Ríos",
+  "linesNorth": [""],
+  "linesSouth": ["4","143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,83915523092275E+016",
+  "lat": "-3,46272570886297E+015"
+}, {
+  "id": 46,
+  "name": "Pichincha",
+  "intersection": "Entre Pasco y Pichincha",
+  "linesNorth": [""],
+  "linesSouth": ["4","143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,83960647227167E+016",
+  "lat": "-3,46279561266726E+016"
+}, {
+  "id": 47,
+  "name": "Jujuy",
+  "intersection": "Entre jujuy y Alberti",
+  "linesNorth": [""],
+  "linesSouth": ["4","143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84008428791157E+015",
+  "lat": "-3,46286641105826E+015"
+}, {
+  "id": 48,
+  "name": "La Rioja",
+  "intersection": "Entre La rioja y Gral Urquiza",
+  "linesNorth": [""],
+  "linesSouth": ["143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84072238225875E+016",
+  "lat": "-3,46311796897137E+016"
+}, {
+  "id": 49,
+  "name": "Sánchez de Loria",
+  "intersection": "Entre 24 de Noviembre y Sánchez de Loria",
+  "linesNorth": ["143"],
+  "linesSouth": ["143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84102738064036E+015",
+  "lat": "-3,46337082219529E+016"
+}, {
+  "id": 50,
+  "name": "Boedo",
+  "intersection": "Entre Álzaga y Boedo",
+  "linesNorth": ["143"],
+  "linesSouth": ["101","143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84152811318649E+015",
+  "lat": "-3,4636940191422E+016"
+}, {
+  "id": 51,
+  "name": "Caseros",
+  "intersection": "Entre Caseros y Trole",
+  "linesNorth": ["23","101","143"],
+  "linesSouth": ["101","143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84193247411605E+016",
+  "lat": "-3,46400397071958E+016"
+}, {
+  "id": 52,
+  "name": "Av La Plata",
+  "intersection": "Entre Gual y Riestra",
+  "linesNorth": ["23","101","143"],
+  "linesSouth": ["101","143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84231801244574E+016",
+  "lat": "-3,46431013538966E+016"
+}, {
+  "id": 53,
+  "name": "Del Barco Centenera",
+  "intersection": "Entre Lanza y Del Barco Centenera",
+  "linesNorth": ["101","143"],
+  "linesSouth": ["101","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84279381978776E+016",
+  "lat": "-3,46475321915058E+016"
+}, {
+  "id": 54,
+  "name": "Perito Moreno",
+  "intersection": "Entre Mom y Erezcano",
+  "linesNorth": ["101","143","150"],
+  "linesSouth": ["46","101","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84311685092763E+016",
+  "lat": "-3,46503572341001E+016"
+}, {
+  "id": 55,
+  "name": "Polideportivo San Lorenzo",
+  "intersection": "Entre Charrúa y Berg",
+  "linesNorth": ["46","101","143","150"],
+  "linesSouth": ["46","101","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84344920810824E+016",
+  "lat": "-3,46530477275479E+016"
+}, {
+  "id": 56,
+  "name": "Varela",
+  "intersection": "Entre Pedernera y Castañares",
+  "linesNorth": [""],
+  "linesSouth": ["101","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84381873346941E+016",
+  "lat": "-3,46553165709766E+016"
+}, {
+  "id": 57,
+  "name": "Lafuente",
+  "intersection": "Entre San Pedrito y José Martí",
+  "linesNorth": ["23","76","101","143","150"],
+  "linesSouth": ["23","76","101","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84424416757161E+016",
+  "lat": "-3,46593124133848E+016"
+}, {
+  "id": 58,
+  "name": "Laguna",
+  "intersection": "Entre Laguna y Lacarra",
+  "linesNorth": ["101","143","150"],
+  "linesSouth": ["101","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84490440334389E+016",
+  "lat": "-3,46643276542113E+016"
+}, {
+  "id": 59,
+  "name": "Cecilia Grierson",
+  "intersection": "Entre Lacarra y Escalada",
+  "linesNorth": ["101","143","150"],
+  "linesSouth": ["101","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84547170640975E+016",
+  "lat": "-3,46691887806288E+016"
+}, {
+  "id": 60,
+  "name": "Escalada",
+  "intersection": "Entre Escalada y Pola",
+  "linesNorth": ["101","114","143","150"],
+  "linesSouth": ["101","114","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84619023017799E+016",
+  "lat": "-3,46755866123532E+016"
+}, {
+  "id": 61,
+  "name": "Pola",
+  "intersection": "Entre Founrouge y Larraya",
+  "linesNorth": ["101","114","143","150"],
+  "linesSouth": ["101","114","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84655069672721E+016",
+  "lat": "-3,46789102440256E+016"
+}, {
+  "id": 62,
+  "name": "Lisandro de la Torre",
+  "intersection": "Fernández de la Cruz y Lisandro de la Torre",
+  "linesNorth": ["36","143"],
+  "linesSouth": ["36","143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84723019052065E+016",
+  "lat": "-3,46848291457924E+016"
+}, {
+  "id": 63,
+  "name": "Piedrabuena",
+  "intersection": "Entre Piedrabuena y Guaminí",
+  "linesNorth": ["36","143","150"],
+  "linesSouth": ["36","143","150"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84757022683789E+016",
+  "lat": "-3,46879008328316E+016"
+}, {
+  "id": 64,
+  "name": "Montiel",
+  "intersection": "Fernández de la Cruz y Montiel",
+  "linesNorth": ["36","143"],
+  "linesSouth": ["36","143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84768627289046E+016",
+  "lat": "-3,46889468284827E+016"
+}, {
+  "id": 65,
+  "name": "José L. Suárez",
+  "intersection": "Entre Saladillo y José León Suárez",
+  "linesNorth": ["36","143"],
+  "linesSouth": ["36","143"],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84780814723552E+016",
+  "lat": "-3,46900538002201E+016"
+}, {
+  "id": 66,
+  "name": "Puente La Noria",
+  "intersection": "",
+  "linesNorth": [""],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur",
+  "lng": "-5,84618089710669E+016",
+  "lat": "-3,47045196955954E+016"
+}, {
+  "id": 67,
+  "name": "Gral Paz",
+  "intersection": "Roca Cnel y Gral Paz",
+  "linesNorth": ["91","101","114","117","141"],
+  "linesSouth": ["91","101","114","117","141"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84697644399137E+016",
+  "lat": "-3,4697795350077E+016"
+}, {
+  "id": 68,
+  "name": "Guaminí",
+  "intersection": "Entre Guaminí y Montiel",
+  "linesNorth": ["91","101","114","117","141"],
+  "linesSouth": ["91","101","114","117","141"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84673916227605E+016",
+  "lat": "-3,46956224437716E+016"
+}, {
+  "id": 69,
+  "name": "Piedrabuena",
+  "intersection": "Entre Piedrabuena y Guaminí",
+  "linesNorth": ["91","101","114","117"],
+  "linesSouth": ["91","101","114","117"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,846633367766E+016",
+  "lat": "-3,46946518718453E+016"
+}, {
+  "id": 70,
+  "name": "Lisandro de la Torre",
+  "intersection": "Entre Lisandro de la Torre y Timoteo Gordillo",
+  "linesNorth": ["47","91","114","117","150"],
+  "linesSouth": ["47","91","114","117"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84635700565547E+016",
+  "lat": "-3,46921412097659E+016"
+}, {
+  "id": 71,
+  "name": "Larrazábal",
+  "intersection": "Entre Pasaje Roca y Larrazábal",
+  "linesNorth": [""],
+  "linesSouth": ["91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84574292184394E+016",
+  "lat": "-3,46861371824481E+016"
+}, {
+  "id": 72,
+  "name": "Escalada",
+  "intersection": "Entre Escalada y Pasaje Roca",
+  "linesNorth": ["91","115"],
+  "linesSouth": ["91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,8453087788369E+016",
+  "lat": "-3,46825025234943E+016"
+}, {
+  "id": 73,
+  "name": "Estadio Parque Roca",
+  "intersection": "Entre Escalada y Lacarra",
+  "linesNorth": ["91","115"],
+  "linesSouth": ["91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-584481350991623",
+  "lat": "-3,46763542216201E+016"
+}, {
+  "id": 74,
+  "name": "Parque Roca",
+  "intersection": "Entre Escalada y Lacarra",
+  "linesNorth": ["91","115"],
+  "linesSouth": ["91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84453918656201E+016",
+  "lat": "-3,46720119679677E+016"
+}, {
+  "id": 75,
+  "name": "Mariano Acosta",
+  "intersection": "Entre Pergamino y Mariano Acosta",
+  "linesNorth": ["91","115"],
+  "linesSouth": ["91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84404169573734E+016",
+  "lat": "-3,4666458909393E+016"
+}, {
+  "id": 76,
+  "name": "Lacarra",
+  "intersection": "Entre Mariano Acosta y Lacarra",
+  "linesNorth": ["91","115"],
+  "linesSouth": ["91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84423465028446E+016",
+  "lat": "-3,46681883219683E+016"
+}, {
+  "id": 77,
+  "name": "Lafuente",
+  "intersection": "Entre San Pedrito y José Martí",
+  "linesNorth": [""],
+  "linesSouth": ["91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84371509662638E+016",
+  "lat": "-3,46633961690331E+016"
+}, {
+  "id": 78,
+  "name": "Varela",
+  "intersection": "Entre Varela y Culpina",
+  "linesNorth": [""],
+  "linesSouth": ["76","91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84330134430965E+015",
+  "lat": "-3,466149905324E+016"
+}, {
+  "id": 79,
+  "name": "Berg",
+  "intersection": "Entre Berg y Rivera Indarte",
+  "linesNorth": [""],
+  "linesSouth": ["76","91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84295487255738E+016",
+  "lat": "-3,46599187006623E+016"
+}, {
+  "id": 80,
+  "name": "Bonorino",
+  "intersection": "Entre Bonorino Esteban y Charrúa",
+  "linesNorth": [""],
+  "linesSouth": ["76","91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84263593337239E+016",
+  "lat": "-3,46585030889658E+016"
+}, {
+  "id": 81,
+  "name": "Vedia",
+  "intersection": "Rabanal y Vedia Agustín",
+  "linesNorth": [""],
+  "linesSouth": ["76","91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84218123502892E+016",
+  "lat": "-3,46563054218411E+016"
+}, {
+  "id": 82,
+  "name": "Sáenz",
+  "intersection": "Entre Sáenz y Del Barco Centenera",
+  "linesNorth": [""],
+  "linesSouth": ["76","91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84173038474322E+016",
+  "lat": "-3,46549521058308E+015"
+}, {
+  "id": 83,
+  "name": "Pompeya",
+  "intersection": "Entre Luppi y Lynch",
+  "linesNorth": ["91","115"],
+  "linesSouth": ["91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84163666602149E+016",
+  "lat": "-3,46516789352299E+016"
+}, {
+  "id": 84,
+  "name": "Grito de Asencio",
+  "intersection": "Entre Famatina y Grito de Asencio",
+  "linesNorth": ["115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84157470425851E+016",
+  "lat": "-3,46475981569553E+016"
+}, {
+  "id": 85,
+  "name": "José C. Paz",
+  "intersection": "Entre Andrés Ferreira y José C Paz",
+  "linesNorth": ["115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,841418336116E+016",
+  "lat": "-3,46450574184779E+016"
+}, {
+  "id": 86,
+  "name": "Cortejarena",
+  "intersection": "Entre Puna y Chutro",
+  "linesNorth": ["115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84128675241834E+016",
+  "lat": "-3,46421498867279E+016"
+}, {
+  "id": 87,
+  "name": "Bathurst",
+  "intersection": "Entre Cátulo Castillo y Rondeau",
+  "linesNorth": ["115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,8410694027391E+016",
+  "lat": "-3,46362955837274E+015"
+}, {
+  "id": 88,
+  "name": "Brasil",
+  "intersection": "Entre 24 de Noviembre y Sánchez de Loria",
+  "linesNorth": ["6","97","143"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84095694524468E+016",
+  "lat": "-3,46347884204904E+016"
+}, {
+  "id": 89,
+  "name": "La Rioja",
+  "intersection": "Entre La Rioja y Gral Urquiza",
+  "linesNorth": ["6","97","143"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84066852353214E+016",
+  "lat": "-3,46339017090725E+016"
+}, {
+  "id": 90,
+  "name": "Jujuy",
+  "intersection": "Entre Jujuy y Catamarca",
+  "linesNorth": ["6","97","143"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84009974665397E+016",
+  "lat": "-3,46317747254111E+016"
+}, {
+  "id": 91,
+  "name": "Garraham",
+  "intersection": "Entre Pichincha y Combate de los Pozos",
+  "linesNorth": ["6","97","143"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,8395399668186E+016",
+  "lat": "-3,4630204617071E+016"
+}, {
+  "id": 92,
+  "name": "Entre Ríos",
+  "intersection": "Entre Pichincha y Combate de los Pozos",
+  "linesNorth": ["6","97","143"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,83920609190154E+016",
+  "lat": "-3,46295830838638E+016"
+}, {
+  "id": 93,
+  "name": "Soldado de la Frontera",
+  "intersection": "Entre Soldado de la Frontera y Racedo",
+  "linesNorth": ["47","91","114","115","117","141","150"],
+  "linesSouth": ["91","115"],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84612317858022E+016",
+  "lat": "-3,46899725919259E+016"
+}, {
+  "id": 94,
+  "name": "Varela",
+  "intersection": "Entre Pedernera y Castañares",
+  "linesNorth": ["23","76","101","143","150"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Fernández de la Cruz",
+  "lng": "-5,84378005596537E+016",
+  "lat": "-346556493390366"
+}, {
+  "id": 95,
+  "name": "Larrazábal",
+  "intersection": "Entre Pasaje Roca y Larrazábal",
+  "linesNorth": ["91","115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84569928853322E+016",
+  "lat": "-3,46864312346379E+016"
+}, {
+  "id": 96,
+  "name": "Lafuente",
+  "intersection": "Entre San Pedrito y José Martí",
+  "linesNorth": ["76","91","115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84362110014323E+016",
+  "lat": "-3,46643502307666E+016"
+}, {
+  "id": 97,
+  "name": "Varela",
+  "intersection": "Entre Varela y Culpina",
+  "linesNorth": ["76","91","115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84323153457031E+016",
+  "lat": "-3,46623500379727E+016"
+}, {
+  "id": 98,
+  "name": "Berg",
+  "intersection": "Entre Berg y Rivera Indarte",
+  "linesNorth": ["76","91","115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84289969167742E+016",
+  "lat": "-3,46605032469523E+016"
+}, {
+  "id": 99,
+  "name": "Bonorino",
+  "intersection": "Entre Bonorino Esteban y Charrúa",
+  "linesNorth": ["76","91","115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84260677990948E+016",
+  "lat": "-3,46588639100698E+016"
+}, {
+  "id": 100,
+  "name": "Vedia",
+  "intersection": "Rabanal y Vedia Agustín",
+  "linesNorth": ["76","91","115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84215615382181E+016",
+  "lat": "-3,46567098380638E+016"
+}, {
+  "id": 101,
+  "name": "Sáenz",
+  "intersection": "Entre Sáenz y Del Barco Centenera",
+  "linesNorth": ["91","115"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Sur - Ramal Coronel Roca",
+  "lng": "-5,84172340265376E+016",
+  "lat": "-3,46551411041777E+016"
+}, {
+  "id": 102,
+  "name": "Roosvelt",
+  "intersection": "Entre Roosvelt y Manuel Ugarte",
+  "linesNorth": ["41","57","60","194"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84611659662327E+015",
+  "lat": "-3,45568444021823E+016"
+}, {
+  "id": 103,
+  "name": "Ugarte",
+  "intersection": "Entre Manuel Ugarte y Av Congreso",
+  "linesNorth": ["59","68","133","152","168"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84620769061676E+016",
+  "lat": "-3,45558897986989E+016"
+}, {
+  "id": 104,
+  "name": "Congreso",
+  "intersection": "Entre Av Congreso y Quesada",
+  "linesNorth": ["29","60","168","184"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84629802344217E+016",
+  "lat": "-3,45549540293085E+016"
+}, {
+  "id": 105,
+  "name": "Congreso",
+  "intersection": "Entre Av Congreso y Quesada",
+  "linesNorth": [""],
+  "linesSouth": ["59","60","68","152","161"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84630865078036E+016",
+  "lat": "-3,45550168324228E+016"
+}, {
+  "id": 106,
+  "name": "Quesada",
+  "intersection": "Entre Quesada e Iberá",
+  "linesNorth": [""],
+  "linesSouth": ["29","57","133","168","184","194"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84640884952958E+016",
+  "lat": "-3,45540119705913E+016"
+}, {
+  "id": 107,
+  "name": "Iberá",
+  "intersection": "Entre Guayra y Campos Salles",
+  "linesNorth": ["60"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84653940673643E+016",
+  "lat": "-3,45523350973687E+016"
+}, {
+  "id": 108,
+  "name": "Iberá",
+  "intersection": "Entre Iberá y Guayra",
+  "linesNorth": ["59","68","152","161"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84647640582598E+015",
+  "lat": "-3,45530950311203E+016"
+}, {
+  "id": 109,
+  "name": "Campos Salles",
+  "intersection": "Entre Campos Salles y Manuela Pedraza",
+  "linesNorth": ["29","133","168","184"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84659557510714E+016",
+  "lat": "-3,45516191245204E+016"
+}, {
+  "id": 110,
+  "name": "Manuela Pedraza",
+  "intersection": "Entre Manuela Pedraza y Juana Azurduy",
+  "linesNorth": [""],
+  "linesSouth": ["59","60","68","152"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84664187651064E+016",
+  "lat": "-3,45512925334048E+016"
+}, {
+  "id": 111,
+  "name": "Juana Azurduy",
+  "intersection": "Entre Juana Azurduy y Núñez",
+  "linesNorth": [""],
+  "linesSouth": ["133","161","168","184"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84670107925898E+016",
+  "lat": "-3,45505263118933E+016"
+}, {
+  "id": 112,
+  "name": "Núñez",
+  "intersection": "Entre Juana Azurduy y Núñez",
+  "linesNorth": ["59","60","68","133"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84672081196884E+016",
+  "lat": "-3,455003015749E+016"
+}, {
+  "id": 113,
+  "name": "Núñez",
+  "intersection": "Entre Núñez y Crisólogo Larralde",
+  "linesNorth": ["152","161","168","184"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84678153149074E+016",
+  "lat": "-3,45493141741293E+016"
+}, {
+  "id": 114,
+  "name": "Crisólogo Larralde",
+  "intersection": "Entre Crisólogo Larralde y Av Comodoro Rivadavia",
+  "linesNorth": ["57","194"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84683314192387E+016",
+  "lat": "-3,45486547150233E+016"
+}, {
+  "id": 115,
+  "name": "Manzanares",
+  "intersection": "Entre Av García del Río y Manzanares",
+  "linesNorth": [""],
+  "linesSouth": ["57","59","60","68","133"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84693256731639E+016",
+  "lat": "-3,4547599566743E+015"
+}, {
+  "id": 116,
+  "name": "Vilela",
+  "intersection": "Entre Paroissien y Vilela",
+  "linesNorth": ["59","68","152","161"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84701615417628E+016",
+  "lat": "-3,45463433407004E+016"
+}, {
+  "id": 117,
+  "name": "Besares",
+  "intersection": "Entre Vilela y Besares",
+  "linesNorth": ["60","133","168","184"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84707022707388E+015",
+  "lat": "-3,45456179260721E+016"
+}, {
+  "id": 118,
+  "name": "Ruiz Huidobro",
+  "intersection": "Entre Besares y Ruiz Huidobro",
+  "linesNorth": [""],
+  "linesSouth": ["59","60","68","152"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84713368188562E+016",
+  "lat": "-3,45449365729113E+016"
+}, {
+  "id": 119,
+  "name": "Correa",
+  "intersection": "Entre Ruiz Huidobro y Correa",
+  "linesNorth": [""],
+  "linesSouth": ["133","161","168","184"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84718756307032E+016",
+  "lat": "-3,45442080128812E+016"
+}, {
+  "id": 120,
+  "name": "Ramallo",
+  "intersection": "Entre Correa y Ramallo",
+  "linesNorth": ["59","68","152","161"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84723005775533E+016",
+  "lat": "-3,45434166558697E+016"
+}, {
+  "id": 121,
+  "name": "Arias",
+  "intersection": "Entre Ramallo y Arias",
+  "linesNorth": ["60","133","168","184"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84728621391467E+015",
+  "lat": "-3,45426755288099E+016"
+}, {
+  "id": 122,
+  "name": "Deheza",
+  "intersection": "Entre Arias y Deheza",
+  "linesNorth": [""],
+  "linesSouth": ["59","60","68","152"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84735906596215E+016",
+  "lat": "-3,45418904218258E+016"
+}, {
+  "id": 123,
+  "name": "Pico",
+  "intersection": "Entre Deheza y Pico",
+  "linesNorth": [""],
+  "linesSouth": ["133","161","168","184"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84741228924685E+016",
+  "lat": "-3,45411523234827E+016"
+}, {
+  "id": 124,
+  "name": "Gral Paz",
+  "intersection": "Debajo de la Av Gral Paz",
+  "linesNorth": ["19","71","161","130","152","184"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84757836184498E+016",
+  "lat": "-3,45388316734613E+015"
+}, {
+  "id": 125,
+  "name": "Gral Paz",
+  "intersection": "Debajo de la Av Gral Paz",
+  "linesNorth": [""],
+  "linesSouth": ["59","60","68","133","152","161","168","184"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84759126483894E+016",
+  "lat": "-3,45388881827821E+016"
+}, {
+  "id": 126,
+  "name": "Gral Paz",
+  "intersection": "Debajo de la Av Gral Paz",
+  "linesNorth": ["21","59","60","68","133","151","168"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84756242279087E+016",
+  "lat": "-3,45387563261492E+015"
+}, {
+  "id": 127,
+  "name": "Gral Paz",
+  "intersection": "Debajo de la Av Gral Paz",
+  "linesNorth": [""],
+  "linesSouth": ["19","71","130","151"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84760796299295E+016",
+  "lat": "-345389698092415"
+}, {
+  "id": 128,
+  "name": "Laprida",
+  "intersection": "Entre Aristóbulo del Valle y Francisco Narciso de Laprida",
+  "linesNorth": ["19","59","60","71","130","152"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84772934124832E+015",
+  "lat": "-3,453590485531E+016"
+}, {
+  "id": 129,
+  "name": "Alsina",
+  "intersection": "Entre Narciso de Laprida y Adolfo Alsina",
+  "linesNorth": ["21","161","168","184","203","314","365"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84777865363727E+015",
+  "lat": "-3,45349376198706E+016"
+}, {
+  "id": 130,
+  "name": "Álvarez",
+  "intersection": "Entre Adolfo Alsina y Agustín Álvarez",
+  "linesNorth": [""],
+  "linesSouth": ["19","59","71","152","161"],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84783707266324E+016",
+  "lat": "-3,4534020613533E+016"
+}, {
+  "id": 131,
+  "name": "Lavalle",
+  "intersection": "Entre Agustín Álvarez y Gral Lavalle",
+  "linesNorth": [""],
+  "linesSouth": ["60","130","168","203","314","365"],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84788562477194E+016",
+  "lat": "-3,45331036173575E+015"
+}, {
+  "id": 132,
+  "name": "Las Heras",
+  "intersection": "Entre Gral Lavalle y Las Heras",
+  "linesNorth": ["19","59","60","71","130","152","168"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84791899696606E+016",
+  "lat": "-3,45321301164309E+015"
+}, {
+  "id": 133,
+  "name": "Guemes",
+  "intersection": "Entre Las Heras y Guemes",
+  "linesNorth": ["21","161","184","203","314","365"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84796906368784E+016",
+  "lat": "-3,45311565913277E+016"
+}, {
+  "id": 134,
+  "name": "Melo",
+  "intersection": "Entre Guemes y Melo",
+  "linesNorth": [""],
+  "linesSouth": ["19","59","71","152"],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84803278861515E+016",
+  "lat": "-3,453017048365E+016"
+}, {
+  "id": 135,
+  "name": "Haedo",
+  "intersection": "Entre Melo y Haedo",
+  "linesNorth": [""],
+  "linesSouth": ["60","130","168","203","314","365"],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84807982025519E+016",
+  "lat": "-3,45293288457776E+015"
+}, {
+  "id": 136,
+  "name": "Santa Rosa",
+  "intersection": "Entre Martín J. Haedo y Santa Rosa",
+  "linesNorth": ["19","59","71","152"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84813063795186E+016",
+  "lat": "-3,45281606210937E+016"
+}, {
+  "id": 137,
+  "name": "Roca",
+  "intersection": "Entre Santa Rosa y Roca",
+  "linesNorth": ["60","130","168","203","314","365"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84817387412269E+016",
+  "lat": "-345273566673145"
+}, {
+  "id": 138,
+  "name": "Urquiza",
+  "intersection": "Entre Roca y Urquiza",
+  "linesNorth": [""],
+  "linesSouth": ["19","59","71","152"],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84823911333256E+016",
+  "lat": "-3,45264521907117E+016"
+}, {
+  "id": 139,
+  "name": "Vergara",
+  "intersection": "Entre Urquiza y Vergara",
+  "linesNorth": [""],
+  "linesSouth": ["60","130","168","203","314","365"],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84829220869279E+016",
+  "lat": "-3,45254974876937E+016"
+}, {
+  "id": 140,
+  "name": "San Martín",
+  "intersection": "Entre Vergara y Gral San Martín",
+  "linesNorth": ["19","60","71","130","168"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84833695259172E+016",
+  "lat": "-3,45244109085759E+016"
+}, {
+  "id": 141,
+  "name": "Arenales",
+  "intersection": "Entre Gral San Martín y Arenales",
+  "linesNorth": ["59","152"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,8483892867336E+016",
+  "lat": "-3,45234562023109E+016"
+}, {
+  "id": 142,
+  "name": "Libertad",
+  "intersection": "Entre Arenales y Libertad",
+  "linesNorth": ["203","314","365"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84843858562533E+016",
+  "lat": "-3,45225454616651E+016"
+}, {
+  "id": 143,
+  "name": "Yrigoyen",
+  "intersection": "Entre Libertad e Hipólito Yrigoyen",
+  "linesNorth": [""],
+  "linesSouth": ["19","59","71","152"],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84850457433214E+016",
+  "lat": "-3,45215404828578E+016"
+}, {
+  "id": 144,
+  "name": "Italia",
+  "intersection": "Entre Hipólito Yrigoyen e Italia",
+  "linesNorth": [""],
+  "linesSouth": ["21","60","203","314","365"],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84856676255012E+016",
+  "lat": "-3,45203533765764E+016"
+}, {
+  "id": 145,
+  "name": "Malaver",
+  "intersection": "Entre Italia y Antonio Malaver",
+  "linesNorth": ["19","21","59","60","71","152","203","314","365"],
+  "linesSouth": [""],
+  "metrobus": "Metrobus Norte - Av Maipú (provincia)",
+  "lng": "-5,84862439232863E+016",
+  "lat": "-3,45190218270207E+016"
+}, {
+  "id": 146,
+  "name": "Paroissien",
+  "intersection": "Entre Av García del Río y Paroissien",
+  "linesNorth": [""],
+  "linesSouth": ["152","161","168","184","194"],
+  "metrobus": "Metrobus Norte - Av Cabildo",
+  "lng": "-5,84697346547064E+016",
+  "lat": "-3,45470451950358E+016"
+}]
