@@ -16,13 +16,18 @@ angular.module('tracker')
       line += (formData.descended || '') + ';';
       line += (formData.ascended || '') + ';';
       line += (formData.line || '') + ';';
-      line += (formData.comment.replace(/\n/gi) || '') + '\n';
+      line += (formData.comment || '');
 
       return line;
     }
 
-    return function(station, milestones, formData) {
-      var data = toCSV(station, milestones, formData);
-      fileStorage.write(data);
+    return function(station, milestones, formData, cb) {
+      var data = toCSV(station.name, milestones, formData);
+      console.log(data);
+      if (fileStorage.write) {
+        fileStorage.write(data, cb);
+      } else {
+        cb(false);
+      }
     }
   }])

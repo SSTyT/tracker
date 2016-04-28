@@ -3,14 +3,17 @@ angular.module('tracker')
   .config(['$stateProvider', function($stateProvider) {
 
     $stateProvider.state('tracking', {
-      url: '/tracking/:station',
+      url: '/tracking',
       templateUrl: 'tracking/tracking.html',
-      controller: 'TrackingCtrl'
+      controller: 'TrackingCtrl',
+      params: {
+        station: {}
+      }
     });
 
   }])
-  .controller('TrackingCtrl', ['$scope', '$state', 'milestone', 'saveRegister',
-    function($scope, $state, milestone, saveRegister) {
+  .controller('TrackingCtrl', ['$scope', '$state', '$ionicPopup', '$timeout', 'milestone', 'saveRegister',
+    function($scope, $state, $ionicPopup, $timeout, milestone, saveRegister) {
       var ctrl = this;
 
       ctrl.resetState = function() {
@@ -40,6 +43,7 @@ angular.module('tracker')
       }
 
       $scope.station = $state.params.station;
+
       $scope.buttons = {
         register: function() {
           return !ctrl.state.finished;
@@ -63,10 +67,37 @@ angular.module('tracker')
           ctrl.nextMilestone();
         },
         onCancel: function() {
-          ctrl.resetState();
+          var confirm = $ionicPopup.confirm({
+            title: 'Cancelar',
+            cssClass: 'align-center',
+            template: '<span>Se perderan los datos cargados</span>',
+            cancelText: 'Cancelar',
+            cancelType: 'button-assertive',
+            okType: 'button-balanced'
+          });
+
+          confirm.then(function(cancel) {
+            if (cancel) {
+              ctrl.resetState();
+            }
+          });
         },
         onSave: function() {
-          saveRegister($scope.station, $scope.milestones, $scope.data);
+          saveRegister($scope.station, $scope.milestones, $scope.data, function(saved) {
+            if (saved) {
+              ctrl.resetState();
+              $scope.message = 'Registro grabado';
+            } else {
+              $scope.message = 'Error, intente nuevamente';
+            }
+
+            $scope.saved = saved
+            $scope.showMessage = true;
+
+            $timeout(function() {
+              $scope.showMessage = false;
+            }, 1500)
+          });
         }
       }
 

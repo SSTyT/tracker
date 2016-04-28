@@ -14,12 +14,12 @@ angular.module('tracker')
           console.log(error);
         });
 
-      fileStorage.write = function(data) {
+      fileStorage.write = function(data, cb) {
         $cordovaFile.writeExistingFile(cordova.file.externalRootDirectory, fileName, data)
           .then(function(success) {
-            console.log(success);
+            cb(true);
           }, function(error) {
-            console.log(error);
+            cb(false);
           });
       }
     });
