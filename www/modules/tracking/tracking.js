@@ -83,20 +83,33 @@ angular.module('tracker')
           });
         },
         onSave: function() {
-          saveRegister($scope.station, $scope.milestones, $scope.data, function(saved) {
-            if (saved) {
-              ctrl.resetState();
-              $scope.message = 'Registro grabado';
-            } else {
-              $scope.message = 'Error, intente nuevamente';
+          var confirm = $ionicPopup.confirm({
+            title: 'Guardar datos?',
+            cssClass: 'align-center',
+            cancelText: 'Cancelar',
+            cancelType: 'button-assertive',
+            okText: 'Guardar',
+            okType: 'button-balanced'
+          });
+
+          confirm.then(function(save) {
+            if (save) {
+              saveRegister($scope.station, $scope.milestones, $scope.data, function(saved) {
+                if (saved) {
+                  ctrl.resetState();
+                  $scope.message = 'Registro grabado';
+                } else {
+                  $scope.message = 'Error, intente nuevamente';
+                }
+
+                $scope.saved = saved
+                $scope.showMessage = true;
+
+                $timeout(function() {
+                  $scope.showMessage = false;
+                }, 1500)
+              });
             }
-
-            $scope.saved = saved
-            $scope.showMessage = true;
-
-            $timeout(function() {
-              $scope.showMessage = false;
-            }, 1500)
           });
         }
       }
