@@ -3,17 +3,17 @@
         <div class="list">
             <milestone-registry ng-repeat="milestone in milestones" milestone="milestone"></milestone-registry>
             <form ng-show="buttons.save()" class="form-data">
-                <label class="item item-input item-floating-label">
+                <label class="item item-input item-stacked-label">
                     <span class="input-label">Línea</span>
                     <input ng-model="data.line" type="number" placeholder="Línea"></input>
                 </label>
-                <label class="item item-input item-floating-label">
+                <label class="item item-input item-stacked-label">
                     <span class="input-label">Pasajeros Ascendidos</span>
-                    <input ng-model="data.ascended" type="number" placeholder="Pasajeros Ascendidos"></input>
+                    <input ng-model="data.ascended" type="number" placeholder="0"></input>
                 </label>
-                <label class="item item-input item-floating-label">
+                <label class="item item-input item-stacked-label">
                     <span class="input-label">Pasajeros Descendidos</span>
-                    <input ng-model="data.descended" type="number" placeholder="Pasajeros Descendidos"></input>
+                    <input ng-model="data.descended" type="number" placeholder="0"></input>
                 </label>
 
                 <ion-checkbox ng-model="data.opLane">Ingresó por carril de operación</ion-checkbox>

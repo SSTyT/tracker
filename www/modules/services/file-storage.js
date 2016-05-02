@@ -14,11 +14,11 @@ angular.module('tracker')
       'Linea;' +
       'Pasajeros Ascendidos;' +
       'Pasajeros Descendidos;' +
-      'Ingreso por carril de operacion' +
-      'Se detuvo en el semaforo' +
-      'Colectivo articulado' +
-      'Ascensos por puerta del medio' +
-      'Operacion fuera de parador' +
+      'Ingreso por carril de operacion;' +
+      'Se detuvo en el semaforo;' +
+      'Colectivo articulado;' +
+      'Ascensos por puerta del medio;' +
+      'Operacion fuera de parador;' +
       'Otras observaciones';
 
     function toCSV(station, milestones, formData) {
