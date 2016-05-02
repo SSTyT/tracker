@@ -11,6 +11,15 @@ angular.module('tracker')
     }
   }])
   .controller('milestoneRegistryCtrl', ['$scope', function function_name($scope) {
+
+    $scope.swipe = function() {
+      if ($scope.milestone.completed && $scope.milestone.skippable) {
+        $scope.milestone.skipped = true;
+        $scope.milestone.date = null;
+        $scope.date = '-';
+      }
+    }
+
     $scope.$watch('milestone.completed', function() {
       if ($scope.milestone.completed) {
         $scope.milestone.date = moment();

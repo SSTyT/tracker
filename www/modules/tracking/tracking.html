@@ -5,15 +5,15 @@
             <form ng-show="buttons.save()" class="form-data">
                 <label class="item item-input item-floating-label">
                     <span class="input-label">Línea</span>
-                    <input ng-model="data.line" type="number" placeholder="Línea">
+                    <input ng-model="data.line" type="text" placeholder="Línea"></input>
                 </label>
                 <label class="item item-input item-floating-label">
                     <span class="input-label">Pasajeros Ascendidos</span>
-                    <input ng-model="data.ascended" type="number" placeholder="Pasajeros Ascendidos">
+                    <input ng-model="data.ascended" type="text" placeholder="Pasajeros Ascendidos"></input>
                 </label>
                 <label class="item item-input item-floating-label">
                     <span class="input-label">Pasajeros Descendidos</span>
-                    <input ng-model="data.descended" type="number" placeholder="Pasajeros Descendidos">
+                    <input ng-model="data.descended" type="text" placeholder="Pasajeros Descendidos"></input>
                 </label>
                 <label class="item item-input item-floating-label">
                     <span class="input-label">Observaciones</span>
@@ -23,7 +23,7 @@
         </div>
     </ion-content>
     <div ng-show="showMessage" class="bar bar-subfooter bar-dark save-message">
-      <span class="title">{{message}}</span>
+        <span class="title">{{message}}</span>
     </div>
     <ion-footer-bar class="track-buttons">
         <div class="button-bar">
