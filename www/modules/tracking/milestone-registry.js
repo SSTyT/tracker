@@ -11,19 +11,23 @@ angular.module('tracker')
     }
   }])
   .controller('milestoneRegistryCtrl', ['$scope', function function_name($scope) {
+    var ctrl = this;
 
-    $scope.swipe = function() {
+    $scope.toggle = function() {
       if ($scope.milestone.completed && $scope.milestone.skippable) {
-        $scope.milestone.skipped = true;
-        $scope.milestone.date = null;
-        $scope.date = '-';
+        $scope.milestone.skipped = !$scope.milestone.skipped;
+        ctrl.updateDate();
       }
     }
 
     $scope.$watch('milestone.completed', function() {
       if ($scope.milestone.completed) {
         $scope.milestone.date = moment();
-        $scope.date = $scope.milestone.skipped ? '-' : $scope.milestone.date.format('DD/MM/YYYY - HH:mm:ss');
+        ctrl.updateDate();
       }
     }, false);
+
+    ctrl.updateDate = function() {
+      $scope.date = $scope.milestone.skipped ? '-' : $scope.milestone.date.format('DD/MM/YYYY - HH:mm:ss');
+    }
   }]);

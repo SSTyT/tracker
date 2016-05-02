@@ -5,8 +5,21 @@ angular.module('tracker')
 
     var today = moment().format('YYYY-MM-DD');
     var fileName = 'relevamientos-' + today + '.csv'
-    var header = 'Parador;Ingresando;Detenido;Puertas abiertas;Sube último pasajero;' +
-      'Sale de estación;Línea;Pasajeros Ascendidos;Pasajeros Descendidos;Observaciones';
+    var header = 'Parador;' +
+      'Ingresando;' +
+      'Detenido;' +
+      'Puertas abiertas;' +
+      'Sube ultimo pasajero;' +
+      'Sale de estacion;' +
+      'Linea;' +
+      'Pasajeros Ascendidos;' +
+      'Pasajeros Descendidos;' +
+      'Ingreso por carril de operacion' +
+      'Se detuvo en el semaforo' +
+      'Colectivo articulado' +
+      'Ascensos por puerta del medio' +
+      'Operacion fuera de parador' +
+      'Otras observaciones';
 
     function toCSV(station, milestones, formData) {
       var line = '';
@@ -21,8 +34,13 @@ angular.module('tracker')
       });
 
       line += (formData.line || '') + ';';
-      line += (formData.ascended || '') + ';';
-      line += (formData.descended || '') + ';';
+      line += (formData.ascended || '0') + ';';
+      line += (formData.descended || '0') + ';';
+      line += (formData.opLane?'si':'no') + ';';
+      line += (formData.redLight?'si':'no') + ';';
+      line += (formData.articulado?'si':'no') + ';';
+      line += (formData.middleAscension?'si':'no') + ';';
+      line += (formData.outOfBounds?'si':'no') + ';';
       line += (formData.comment || '');
 
       return line;

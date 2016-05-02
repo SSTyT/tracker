@@ -5,19 +5,26 @@
             <form ng-show="buttons.save()" class="form-data">
                 <label class="item item-input item-floating-label">
                     <span class="input-label">Línea</span>
-                    <input ng-model="data.line" type="text" placeholder="Línea"></input>
+                    <input ng-model="data.line" type="number" placeholder="Línea"></input>
                 </label>
                 <label class="item item-input item-floating-label">
                     <span class="input-label">Pasajeros Ascendidos</span>
-                    <input ng-model="data.ascended" type="text" placeholder="Pasajeros Ascendidos"></input>
+                    <input ng-model="data.ascended" type="number" placeholder="Pasajeros Ascendidos"></input>
                 </label>
                 <label class="item item-input item-floating-label">
                     <span class="input-label">Pasajeros Descendidos</span>
-                    <input ng-model="data.descended" type="text" placeholder="Pasajeros Descendidos"></input>
+                    <input ng-model="data.descended" type="number" placeholder="Pasajeros Descendidos"></input>
                 </label>
+
+                <ion-checkbox ng-model="data.opLane">Ingresó por carril de operación</ion-checkbox>
+                <ion-checkbox ng-model="data.redLight">Se detuvo en el semáforo</ion-checkbox>
+                <ion-checkbox ng-model="data.articulado">Colectivo articulado</ion-checkbox>
+                <ion-checkbox ng-model="data.middleAscension">Ascensos por puerta del medio</ion-checkbox>
+                <ion-checkbox ng-model="data.outOfBounds">Operación fuera de parador</ion-checkbox>
+
                 <label class="item item-input item-floating-label">
-                    <span class="input-label">Observaciones</span>
-                    <input ng-model="data.comment" type="text" placeholder="Observaciones"></input>
+                    <span class="input-label">Otras observaciones</span>
+                    <input ng-model="data.comment" type="text" placeholder="Otras observaciones"></input>
                 </label>
             </form>
         </div>
