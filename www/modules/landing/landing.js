@@ -17,12 +17,21 @@ angular.module('tracker')
 
     $http.get('modules/landing/metrobus.json').then(function(metrobus) {
       metrobus.data.forEach(function(station) {
+
+        station.description = station.metrobus;
+        station.description += station.linesNorth.length === 0 ? ' (Sur)' : '';
+        station.description += station.linesSouth.length === 0 ? ' (Norte)' : '';
+
         $scope.data.stations.push(station);
       })
     })
 
-    $scope.track = function(station) {
-      $state.go('tracking', { station: station });
+    $scope.track = function(data) {
+      $state.go('tracking', data);
+    };
+
+    $scope.trackDisabled = function(data) {
+      return !data.station || !data.line || !data.user;
     };
 
   }]);

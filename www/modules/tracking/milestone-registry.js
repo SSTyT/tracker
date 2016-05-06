@@ -28,6 +28,6 @@ angular.module('tracker')
     }, false);
 
     ctrl.updateDate = function() {
-      $scope.date = $scope.milestone.skipped ? '-' : $scope.milestone.date.format('DD/MM/YYYY - HH:mm:ss');
+      $scope.date = $scope.milestone.skipped ? '-' : $scope.milestone.date.format('HH:mm:ss');
     }
   }]);

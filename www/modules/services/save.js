@@ -2,9 +2,9 @@
 angular.module('tracker')
   .factory('saveRegister', ['fileStorage', function saveService(fileStorage) {
 
-    return function(station, milestones, formData, cb) {
+    return function(params, milestones, formData, cb) {
       if (fileStorage.write) {
-        fileStorage.write(station, milestones, formData, cb);
+        fileStorage.write(params, milestones, formData, cb);
       } else {
         cb(false);
       }

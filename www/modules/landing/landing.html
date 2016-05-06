@@ -1,8 +1,16 @@
 <ion-view view-title="Relevamiento Metrobus" class="landing">
     <ion-content>
-      <tracker-dropdown selected="data.station" list="data.stations" title="Parador" description="metrobus"></tracker-dropdown>
+        <tracker-dropdown selected="data.station" list="data.stations" title="Parador" description="description"></tracker-dropdown>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Línea</span>
+            <input ng-model="data.line" type="number" placeholder=""></input>
+        </label>
+        <label class="item item-input item-stacked-label">
+            <span class="input-label">Relevador</span>
+            <input ng-model="data.user" type="text" placeholder=""></input>
+        </label>
     </ion-content>
     <ion-footer-bar>
-        <button ng-disabled="!data.station" on-tap="track(data.station)" class="button button-full button-dark">Relevar</button>
+        <button ng-disabled="trackDisabled(data)" on-tap="track(data)" class="button button-full button-dark">Relevar</button>
     </ion-footer-bar>
 </ion-view>

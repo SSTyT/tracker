@@ -1,12 +1,8 @@
-<ion-view class="tracking" view-title="Parador: {{station.name}}">
+<ion-view class="tracking" view-title="{{params.station.name}} - {{params.line}}">
     <ion-content has-bouncing="true">
         <div class="list">
             <milestone-registry ng-repeat="milestone in milestones" milestone="milestone"></milestone-registry>
             <form ng-show="buttons.save()" class="form-data">
-                <label class="item item-input item-stacked-label">
-                    <span class="input-label">Línea</span>
-                    <input ng-model="data.line" type="number" placeholder="Línea"></input>
-                </label>
                 <label class="item item-input item-stacked-label">
                     <span class="input-label">Pasajeros Ascendidos</span>
                     <input ng-model="data.ascended" type="number" placeholder="0"></input>
@@ -15,14 +11,13 @@
                     <span class="input-label">Pasajeros Descendidos</span>
                     <input ng-model="data.descended" type="number" placeholder="0"></input>
                 </label>
-
                 <ion-checkbox ng-model="data.opLane">Ingresó por carril de operación</ion-checkbox>
                 <ion-checkbox ng-model="data.redLight">Se detuvo en el semáforo</ion-checkbox>
                 <ion-checkbox ng-model="data.articulado">Colectivo articulado</ion-checkbox>
                 <ion-checkbox ng-model="data.middleAscension">Ascensos por puerta del medio</ion-checkbox>
                 <ion-checkbox ng-model="data.outOfBounds">Operación fuera de parador</ion-checkbox>
-
-                <label class="item item-input item-floating-label">
+                <ion-checkbox ng-model="data.inspector">Demorado por inspector</ion-checkbox>
+                <label class="item item-input item-stacked-label">
                     <span class="input-label">Otras observaciones</span>
                     <input ng-model="data.comment" type="text" placeholder="Otras observaciones"></input>
                 </label>
@@ -37,7 +32,7 @@
             <a ng-if="buttons.skip()" on-tap="buttons.onSkip()" class="button button-energized">Saltear</a>
             <a ng-if="buttons.register()" on-tap="buttons.onRegister()" class="button button-balanced">Marcar</a>
             <a ng-if="buttons.cancel()" on-tap="buttons.onCancel()" class="button button-assertive">Borrar</a>
-            <a ng-if="buttons.save()" ng-disabled="!data.line" on-tap="buttons.onSave()" class="button button-balanced">Guardar</a>
+            <a ng-if="buttons.save()" on-tap="buttons.onSave()" class="button button-balanced">Guardar</a>
         </div>
     </ion-footer-bar>
 </ion-view>

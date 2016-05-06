@@ -7,7 +7,9 @@ angular.module('tracker')
       templateUrl: 'tracking/tracking.html',
       controller: 'TrackingCtrl',
       params: {
-        station: {}
+        station: {},
+        line: 0,
+        user: ''
       }
     });
 
@@ -42,7 +44,10 @@ angular.module('tracker')
         }
       }
 
-      $scope.station = $state.params.station;
+      $scope.params = {};
+      $scope.params.station = $state.params.station;
+      $scope.params.line = $state.params.line;
+      $scope.params.user = $state.params.user;
 
       $scope.buttons = {
         register: function() {
@@ -94,7 +99,7 @@ angular.module('tracker')
 
           confirm.then(function(save) {
             if (save) {
-              saveRegister($scope.station, $scope.milestones, $scope.data, function(saved) {
+              saveRegister($scope.params, $scope.milestones, $scope.data, function(saved) {
                 if (saved) {
                   ctrl.resetState();
                   $scope.message = 'Registro grabado';
