@@ -1,38 +1,60 @@
-<ion-view class="tracking" view-title="{{params.station.name}} - {{params.line}}">
-    <ion-content has-bouncing="true">
-        <div class="list">
-            <milestone-registry ng-repeat="milestone in milestones" milestone="milestone"></milestone-registry>
-            <form ng-show="buttons.save()" class="form-data">
-                <label class="item item-input item-stacked-label">
-                    <span class="input-label">Pasajeros Ascendidos</span>
-                    <input ng-model="data.ascended" type="number" placeholder="0"></input>
-                </label>
-                <label class="item item-input item-stacked-label">
-                    <span class="input-label">Pasajeros Descendidos</span>
-                    <input ng-model="data.descended" type="number" placeholder="0"></input>
-                </label>
-                <ion-checkbox ng-model="data.opLane">Ingresó por carril de operación</ion-checkbox>
-                <ion-checkbox ng-model="data.redLight">Se detuvo en el semáforo</ion-checkbox>
-                <ion-checkbox ng-model="data.articulado">Colectivo articulado</ion-checkbox>
-                <ion-checkbox ng-model="data.middleAscension">Ascensos por puerta del medio</ion-checkbox>
-                <ion-checkbox ng-model="data.outOfBounds">Operación fuera de parador</ion-checkbox>
-                <ion-checkbox ng-model="data.inspector">Demorado por inspector</ion-checkbox>
-                <label class="item item-input item-stacked-label">
-                    <span class="input-label">Otras observaciones</span>
-                    <input ng-model="data.comment" type="text" placeholder="Otras observaciones"></input>
-                </label>
-            </form>
-        </div>
-    </ion-content>
-    <div ng-show="showMessage" class="bar bar-subfooter bar-dark save-message">
-        <span class="title">{{message}}</span>
-    </div>
-    <ion-footer-bar class="track-buttons">
-        <div class="button-bar">
-            <a ng-if="buttons.skip()" on-tap="buttons.onSkip()" class="button button-energized">Saltear</a>
-            <a ng-if="buttons.register()" on-tap="buttons.onRegister()" class="button button-balanced">Marcar</a>
-            <a ng-if="buttons.cancel()" on-tap="buttons.onCancel()" class="button button-assertive">Borrar</a>
-            <a ng-if="buttons.save()" on-tap="buttons.onSave()" class="button button-balanced">Guardar</a>
-        </div>
-    </ion-footer-bar>
+<ion-view class="tracking" view-title="{{station.name}} - {{line}}">
+    <ion-nav-buttons side="left">
+        <button class="button nav-track ion-android-menu" ng-click="toggleMenu()"></button>
+    </ion-nav-buttons>
+    <ion-side-menus enable-menu-with-back-views="true">
+        <!-- Left menu -->
+        <ion-side-menu class="side-menu" side="left">
+            <ion-content has-bouncing="true">
+                <div class="list">
+                    <div ng-click="swap(inst)" class="item" ng-class="{'positive-bg': inst.active, 'positive-bg-border': inst.active}" ng-repeat="inst in ctrl.trackingInstances">
+                        Relevamiento: {{inst.created}}
+                    </div>
+                </div>
+            </ion-content>
+            <ion-footer-bar class="track-buttons">
+                <div class="button-bar">
+                    <a on-tap="addInstance()" class="button button-dark">Agregar</a>
+                </div>
+            </ion-footer-bar>
+        </ion-side-menu>
+        <ion-side-menu-content>
+            <ion-content has-bouncing="true">
+                <div class="list">
+                    <milestone-registry ng-repeat="milestone in instance.milestones" milestone="milestone"></milestone-registry>
+                    <form ng-show="buttons.save()" class="form-data">
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Pasajeros Ascendidos</span>
+                            <input ng-model="instance.data.ascended" type="number" placeholder="0"></input>
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Pasajeros Descendidos</span>
+                            <input ng-model="instance.data.descended" type="number" placeholder="0"></input>
+                        </label>
+                        <ion-checkbox ng-model="instance.data.opLane">Ingresó por carril de operación</ion-checkbox>
+                        <ion-checkbox ng-model="instance.data.redLight">Se detuvo en el semáforo</ion-checkbox>
+                        <ion-checkbox ng-model="instance.data.articulado">Colectivo articulado</ion-checkbox>
+                        <ion-checkbox ng-model="instance.data.middleAscension">Ascensos por puerta del medio</ion-checkbox>
+                        <ion-checkbox ng-model="instance.data.outOfBounds">Operación fuera de parador</ion-checkbox>
+                        <ion-checkbox ng-model="instance.data.inspector">Demorado por inspector</ion-checkbox>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Otras observaciones</span>
+                            <input ng-model="instance.data.comment" type="text" placeholder="Otras observaciones"></input>
+                        </label>
+                    </form>
+                </div>
+            </ion-content>
+            <div ng-show="showMessage" class="bar bar-subfooter bar-dark save-message">
+                <span class="title">{{message}}</span>
+            </div>
+            <ion-footer-bar class="track-buttons">
+                <div class="button-bar">
+                    <a ng-if="buttons.skip()" on-tap="buttons.onSkip()" class="button button-energized">Saltear</a>
+                    <a ng-if="buttons.register()" on-tap="buttons.onRegister()" class="button button-balanced">Marcar</a>
+                    <a ng-if="buttons.cancel()" on-tap="buttons.onCancel()" class="button button-assertive">Borrar</a>
+                    <a ng-if="buttons.save()" on-tap="buttons.onSave()" class="button button-balanced">Guardar</a>
+                </div>
+            </ion-footer-bar>
+        </ion-side-menu-content>
+    </ion-side-menus>
 </ion-view>

@@ -1,0 +1,10 @@
+<ion-view class="tracking" view-title="{{params.station.name}} - {{params.line}}">
+    <ion-nav-buttons side="right">
+        <button class="button nav-track ion-android-add-circle" ng-click="addTrack()"></button>
+        <button class="button nav-track ion-android-arrow-dropright-circle" ng-click="nextTrack()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="left">
+        <button class="button nav-track ion-android-arrow-dropleft-circle" ng-click="prevTrack()"></button>
+    </ion-nav-buttons>
+    <div ui-view name="tracking"></div>
+</ion-view>

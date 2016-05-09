@@ -6,6 +6,7 @@ angular.module('tracker')
       url: '/tracking',
       templateUrl: 'tracking/tracking.html',
       controller: 'TrackingCtrl',
+      controllerAs: 'ctrl',
       params: {
         station: {},
         line: 0,
@@ -14,61 +15,66 @@ angular.module('tracker')
     });
 
   }])
-  .controller('TrackingCtrl', ['$scope', '$state', '$ionicPopup', '$timeout', 'milestone', 'saveRegister',
-    function($scope, $state, $ionicPopup, $timeout, milestone, saveRegister) {
+  .controller('TrackingCtrl', ['$scope', '$state', '$ionicPopup', '$ionicSideMenuDelegate', '$timeout', 'milestone', 'saveRegister',
+    function($scope, $state, $ionicPopup, $ionicSideMenuDelegate, $timeout, milestone, saveRegister) {
       var ctrl = this;
 
-      ctrl.resetState = function() {
-        //recreo hitos
-        $scope.milestones = [
-          milestone.create('Ingresando', false),
-          milestone.create('Detenido', true),
-          milestone.create('Puertas abiertas', true),
-          milestone.create('Sube último pasajero', true),
-          milestone.create('Sale de estación', false),
-        ];
+      $scope.station = $state.params.station;
+      $scope.line = $state.params.line;
 
-        ctrl.state = {
+      ctrl.trackingInstances = [];
+
+      ctrl.createTrackingInstance = function() {
+        return {
+          active: true,
+          created: moment().format('HH:mm:ss'),
+          station: $state.params.station,
+          line: $state.params.line,
+          user: $state.params.user,
+          milestones: [
+            milestone.create('Ingresando', false),
+            milestone.create('Detenido', true),
+            milestone.create('Puertas abiertas', true),
+            milestone.create('Sube último pasajero', true),
+            milestone.create('Sale de estación', false),
+          ],
+          data: {},
           milestoneIndex: 0,
           finished: false
-        }
+        };
+      }
 
-        $scope.data = {};
-      };
+      $scope.instance = ctrl.createTrackingInstance();
+      ctrl.trackingInstances.push($scope.instance);
 
       ctrl.nextMilestone = function() {
-        if ($scope.milestones.length - 1 == ctrl.state.milestoneIndex) {
-          ctrl.state.finished = true;
+        if ($scope.instance.milestones.length - 1 == $scope.instance.milestoneIndex) {
+          $scope.instance.finished = true;
         } else {
-          ctrl.state.milestoneIndex++;
+          $scope.instance.milestoneIndex++;
         }
       }
 
-      $scope.params = {};
-      $scope.params.station = $state.params.station;
-      $scope.params.line = $state.params.line;
-      $scope.params.user = $state.params.user;
-
       $scope.buttons = {
         register: function() {
-          return !ctrl.state.finished;
+          return !$scope.instance.finished;
         },
         skip: function() {
-          return !ctrl.state.finished && $scope.milestones[ctrl.state.milestoneIndex].skippable;
+          return !$scope.instance.finished && $scope.instance.milestones[$scope.instance.milestoneIndex].skippable;
         },
         cancel: function() {
-          return ctrl.state.finished;
+          return $scope.instance.finished;
         },
         save: function() {
-          return ctrl.state.finished;
+          return $scope.instance.finished;
         },
         onRegister: function() {
-          $scope.milestones[ctrl.state.milestoneIndex].completed = true;
+          $scope.instance.milestones[$scope.instance.milestoneIndex].completed = true;
           ctrl.nextMilestone();
         },
         onSkip: function() {
-          $scope.milestones[ctrl.state.milestoneIndex].completed = true;
-          $scope.milestones[ctrl.state.milestoneIndex].skipped = true;
+          $scope.instance.milestones[$scope.instance.milestoneIndex].completed = true;
+          $scope.instance.milestones[$scope.instance.milestoneIndex].skipped = true;
           ctrl.nextMilestone();
         },
         onCancel: function() {
@@ -83,7 +89,7 @@ angular.module('tracker')
 
           confirm.then(function(cancel) {
             if (cancel) {
-              ctrl.resetState();
+
             }
           });
         },
@@ -99,7 +105,7 @@ angular.module('tracker')
 
           confirm.then(function(save) {
             if (save) {
-              saveRegister($scope.params, $scope.milestones, $scope.data, function(saved) {
+              /*saveRegister($scope.params, $scope.milestones, $scope.data, function(saved) {
                 if (saved) {
                   ctrl.resetState();
                   $scope.message = 'Registro grabado';
@@ -113,13 +119,28 @@ angular.module('tracker')
                 $timeout(function() {
                   $scope.showMessage = false;
                 }, 1500)
-              });
+              });*/ //TODO
             }
           });
         }
       }
 
-      ctrl.resetState();
+      $scope.toggleMenu = function() {
+        $ionicSideMenuDelegate.toggleLeft();
+      };
 
+      $scope.addInstance = function() {
+        $scope.instance.active = false;
+        $scope.instance = ctrl.createTrackingInstance();
+        ctrl.trackingInstances.push($scope.instance);
+        $scope.toggleMenu();
+      };
+
+      $scope.swap = function(instance) {
+        $scope.instance.active = false;
+        instance.active = true;
+        $scope.instance = instance;
+        $scope.toggleMenu();
+      }
     }
   ]);
