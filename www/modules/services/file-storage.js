@@ -25,16 +25,16 @@ angular.module('tracker')
       'Demorado por inspector;' +
       'Otras observaciones';
 
-    function toCSV(params, milestones, formData) {
+    function toCSV(instance) {
       var today = moment().format('DD-MM-YYYY');
       var line = '';
 
-      line += params.user + ';';
+      line += instance.user + ';';
       line += today + ';';
-      line += params.station.name + ';';
-      line += params.line + ';';
+      line += instance.station.name + ';';
+      line += instance.line + ';';
 
-      angular.forEach(milestones, function(milestone) {
+      angular.forEach(instance.milestones, function(milestone) {
         if (milestone.skipped) {
           line += ';';
         } else {
@@ -42,15 +42,15 @@ angular.module('tracker')
         }
       });
 
-      line += (formData.ascended || '0') + ';';
-      line += (formData.descended || '0') + ';';
-      line += (formData.opLane ? 'si' : 'no') + ';';
-      line += (formData.redLight ? 'si' : 'no') + ';';
-      line += (formData.articulado ? 'si' : 'no') + ';';
-      line += (formData.middleAscension ? 'si' : 'no') + ';';
-      line += (formData.outOfBounds ? 'si' : 'no') + ';';
-      line += (formData.inspector ? 'si' : 'no') + ';';
-      line += (formData.comment || '');
+      line += (instance.data.ascended || '0') + ';';
+      line += (instance.data.descended || '0') + ';';
+      line += (instance.data.opLane ? 'si' : 'no') + ';';
+      line += (instance.data.redLight ? 'si' : 'no') + ';';
+      line += (instance.data.articulado ? 'si' : 'no') + ';';
+      line += (instance.data.middleAscension ? 'si' : 'no') + ';';
+      line += (instance.data.outOfBounds ? 'si' : 'no') + ';';
+      line += (instance.data.inspector ? 'si' : 'no') + ';';
+      line += (instance.data.comment || '');
 
       return line;
     }
@@ -64,8 +64,9 @@ angular.module('tracker')
           //File already exists
         });
 
-      fileStorage.write = function(params, milestones, formData, cb) {
-        var data = toCSV(params, milestones, formData);
+      fileStorage.write = function(instance, cb) {
+        var data = toCSV(instance);
+
         $cordovaFile.writeExistingFile(cordova.file.externalRootDirectory, fileName, '\n' + data)
           .then(function(success) {
             cb(true);

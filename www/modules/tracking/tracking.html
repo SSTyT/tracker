@@ -1,6 +1,9 @@
 <ion-view class="tracking" view-title="{{station.name}} - {{line}}">
     <ion-nav-buttons side="left">
-        <button class="button nav-track ion-android-menu" ng-click="toggleMenu()"></button>
+        <button class="button nav-track ion-android-menu" on-tap="toggleMenu()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button nav-track ion-android-cancel" on-tap="buttons.onCancel()"></button>
     </ion-nav-buttons>
     <ion-side-menus enable-menu-with-back-views="true">
         <!-- Left menu -->

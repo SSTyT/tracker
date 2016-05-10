@@ -44,6 +44,24 @@ angular.module('tracker')
         };
       }
 
+      ctrl.instanceDone = function() {
+        var index = ctrl.trackingInstances.indexOf($scope.instance);
+
+        //get new active instance
+        if (ctrl.trackingInstances.length == 1) {
+          $scope.instance = ctrl.createTrackingInstance();
+          ctrl.trackingInstances.push($scope.instance);
+        } else if (index == 0) {
+          $scope.instance = ctrl.trackingInstances[index + 1];
+          $scope.instance.active = true;
+        } else {
+          $scope.instance = ctrl.trackingInstances[index - 1];
+          $scope.instance.active = true;
+        }
+
+        ctrl.trackingInstances.splice(index, 1);
+      }
+
       $scope.instance = ctrl.createTrackingInstance();
       ctrl.trackingInstances.push($scope.instance);
 
@@ -89,7 +107,7 @@ angular.module('tracker')
 
           confirm.then(function(cancel) {
             if (cancel) {
-
+              ctrl.instanceDone();
             }
           });
         },
@@ -105,9 +123,9 @@ angular.module('tracker')
 
           confirm.then(function(save) {
             if (save) {
-              /*saveRegister($scope.params, $scope.milestones, $scope.data, function(saved) {
+              saveRegister($scope.instance, function(saved) {
                 if (saved) {
-                  ctrl.resetState();
+                  ctrl.instanceDone();
                   $scope.message = 'Registro grabado';
                 } else {
                   $scope.message = 'Error, intente nuevamente';
@@ -119,7 +137,7 @@ angular.module('tracker')
                 $timeout(function() {
                   $scope.showMessage = false;
                 }, 1500)
-              });*/ //TODO
+              });
             }
           });
         }
