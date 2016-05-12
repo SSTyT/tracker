@@ -17,6 +17,7 @@ angular.module('tracker')
       'Sale de estacion;' +
       'Pasajeros Ascendidos;' +
       'Pasajeros Descendidos;' +
+      'Sentido;' +
       'Ingreso por carril de operacion;' +
       'Se detuvo en el semaforo;' +
       'Colectivo articulado;' +
@@ -32,18 +33,19 @@ angular.module('tracker')
       line += instance.user + ';';
       line += today + ';';
       line += instance.station.name + ';';
-      line += instance.line + ';';
+      line += instance.data.line + ';';
 
       angular.forEach(instance.milestones, function(milestone) {
         if (milestone.skipped) {
           line += ';';
         } else {
-          line += milestone.date.format('HH:mm:ss') + ';';
+          line += milestone.date + ';';
         }
       });
 
       line += (instance.data.ascended || '0') + ';';
       line += (instance.data.descended || '0') + ';';
+      line += (instance.data.direction || '') + ';';
       line += (instance.data.opLane ? 'si' : 'no') + ';';
       line += (instance.data.redLight ? 'si' : 'no') + ';';
       line += (instance.data.articulado ? 'si' : 'no') + ';';

@@ -1,4 +1,4 @@
-<ion-view class="tracking" view-title="{{station.name}} - {{line}}">
+<ion-view class="tracking" view-title="{{station.name}}">
     <ion-nav-buttons side="left">
         <button class="button nav-track ion-android-menu" on-tap="toggleMenu()"></button>
     </ion-nav-buttons>
@@ -23,28 +23,43 @@
         </ion-side-menu>
         <ion-side-menu-content>
             <ion-content has-bouncing="true">
-                <div class="list">
-                    <milestone-registry ng-repeat="milestone in instance.milestones" milestone="milestone"></milestone-registry>
-                    <form ng-show="buttons.save()" class="form-data">
-                        <label class="item item-input item-stacked-label">
-                            <span class="input-label">Pasajeros Ascendidos</span>
-                            <input ng-model="instance.data.ascended" type="number" placeholder="0"></input>
-                        </label>
-                        <label class="item item-input item-stacked-label">
-                            <span class="input-label">Pasajeros Descendidos</span>
-                            <input ng-model="instance.data.descended" type="number" placeholder="0"></input>
-                        </label>
-                        <ion-checkbox ng-model="instance.data.opLane">Ingresó por carril de operación</ion-checkbox>
-                        <ion-checkbox ng-model="instance.data.redLight">Se detuvo en el semáforo</ion-checkbox>
-                        <ion-checkbox ng-model="instance.data.articulado">Colectivo articulado</ion-checkbox>
-                        <ion-checkbox ng-model="instance.data.middleAscension">Ascensos por puerta del medio</ion-checkbox>
-                        <ion-checkbox ng-model="instance.data.outOfBounds">Operación fuera de parador</ion-checkbox>
-                        <ion-checkbox ng-model="instance.data.inspector">Demorado por inspector</ion-checkbox>
-                        <label class="item item-input item-stacked-label">
-                            <span class="input-label">Otras observaciones</span>
-                            <input ng-model="instance.data.comment" type="text" placeholder="Otras observaciones"></input>
-                        </label>
-                    </form>
+                <div class="list form-data">
+                    <milestone-registry milestone="instance.milestones[0]"></milestone-registry>
+                    <milestone-registry milestone="instance.milestones[1]"></milestone-registry>
+                    <milestone-registry milestone="instance.milestones[2]"></milestone-registry>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Pasajeros Ascendidos</span>
+                        <input ng-model="instance.data.ascended" type="number" placeholder="0"></input>
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Pasajeros Descendidos</span>
+                        <input ng-model="instance.data.descended" type="number" placeholder="0"></input>
+                    </label>
+                    <milestone-registry milestone="instance.milestones[3]"></milestone-registry>
+                    <milestone-registry milestone="instance.milestones[4]"></milestone-registry>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Línea</span>
+                        <input ng-model="instance.data.line" type="number" placeholder=""></input>
+                    </label>
+                    <label class="item item-input item-select">
+                        <div class="input-label">
+                            Sentido
+                        </div>
+                        <select ng-model="instance.data.direction">
+                            <option value="ascendente">Ascendente</option>
+                            <option value="descendente">Descendente</option>
+                        </select>
+                    </label>
+                    <ion-checkbox ng-model="instance.data.opLane">Ingresó por carril de operación</ion-checkbox>
+                    <ion-checkbox ng-model="instance.data.redLight">Se detuvo en el semáforo</ion-checkbox>
+                    <ion-checkbox ng-model="instance.data.articulado">Colectivo articulado</ion-checkbox>
+                    <ion-checkbox ng-model="instance.data.middleAscension">Ascensos por puerta del medio</ion-checkbox>
+                    <ion-checkbox ng-model="instance.data.outOfBounds">Operación fuera de parador</ion-checkbox>
+                    <ion-checkbox ng-model="instance.data.inspector">Demorado por inspector</ion-checkbox>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Otras observaciones</span>
+                        <input ng-model="instance.data.comment" type="text" placeholder="Otras observaciones"></input>
+                    </label>
                 </div>
             </ion-content>
             <div ng-show="showMessage" class="bar bar-subfooter bar-dark save-message">
@@ -55,7 +70,7 @@
                     <a ng-if="buttons.skip()" on-tap="buttons.onSkip()" class="button button-energized">Saltear</a>
                     <a ng-if="buttons.register()" on-tap="buttons.onRegister()" class="button button-balanced">Marcar</a>
                     <a ng-if="buttons.cancel()" on-tap="buttons.onCancel()" class="button button-assertive">Borrar</a>
-                    <a ng-if="buttons.save()" on-tap="buttons.onSave()" class="button button-balanced">Guardar</a>
+                    <a ng-if="buttons.save()" ng-disabled="!instance.data.line" on-tap="buttons.onSave()" class="button button-balanced">Guardar</a>
                 </div>
             </ion-footer-bar>
         </ion-side-menu-content>

@@ -9,7 +9,6 @@ angular.module('tracker')
       controllerAs: 'ctrl',
       params: {
         station: {},
-        line: 0,
         user: ''
       }
     });
@@ -20,7 +19,6 @@ angular.module('tracker')
       var ctrl = this;
 
       $scope.station = $state.params.station;
-      $scope.line = $state.params.line;
 
       ctrl.trackingInstances = [];
 
@@ -29,7 +27,6 @@ angular.module('tracker')
           active: true,
           created: moment().format('HH:mm:ss'),
           station: $state.params.station,
-          line: $state.params.line,
           user: $state.params.user,
           milestones: [
             milestone.create('Ingresando', false),
