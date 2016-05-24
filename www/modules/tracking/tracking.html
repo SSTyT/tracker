@@ -27,16 +27,16 @@
                     <milestone-registry milestone="instance.milestones[0]"></milestone-registry>
                     <milestone-registry milestone="instance.milestones[1]"></milestone-registry>
                     <milestone-registry milestone="instance.milestones[2]"></milestone-registry>
+                    <milestone-registry milestone="instance.milestones[3]"></milestone-registry>
+                    <milestone-registry milestone="instance.milestones[4]"></milestone-registry>
                     <label class="item item-input item-stacked-label">
-                        <span class="input-label">Pasajeros Ascendidos</span>
+                        <span class="input-label">¿Cuántos subieron?</span>
                         <input ng-model="instance.data.ascended" type="number" placeholder="0"></input>
                     </label>
                     <label class="item item-input item-stacked-label">
-                        <span class="input-label">Pasajeros Descendidos</span>
+                        <span class="input-label">¿Cuántos bajaron?</span>
                         <input ng-model="instance.data.descended" type="number" placeholder="0"></input>
                     </label>
-                    <milestone-registry milestone="instance.milestones[3]"></milestone-registry>
-                    <milestone-registry milestone="instance.milestones[4]"></milestone-registry>
                     <label class="item item-input item-stacked-label">
                         <span class="input-label">Línea</span>
                         <input ng-model="instance.data.line" type="number" placeholder=""></input>
@@ -57,8 +57,8 @@
                     <ion-checkbox ng-model="instance.data.outOfBounds">Operación fuera de parador</ion-checkbox>
                     <ion-checkbox ng-model="instance.data.inspector">Demorado por inspector</ion-checkbox>
                     <label class="item item-input item-stacked-label">
-                        <span class="input-label">Otras observaciones</span>
-                        <input ng-model="instance.data.comment" type="text" placeholder="Otras observaciones"></input>
+                        <span class="input-label">Observaciones</span>
+                        <input ng-model="instance.data.comment" type="text" placeholder="Observaciones"></input>
                     </label>
                 </div>
             </ion-content>

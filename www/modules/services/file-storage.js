@@ -10,13 +10,13 @@ angular.module('tracker')
       'Fecha;' +
       'Parador;' +
       'Linea;' +
-      'Ingresando;' +
-      'Detenido;' +
-      'Puertas abiertas;' +
-      'Sube ultimo pasajero;' +
-      'Sale de estacion;' +
-      'Pasajeros Ascendidos;' +
-      'Pasajeros Descendidos;' +
+      'Ingresa;' +
+      'Se detiene paralelo al cordón;' +
+      'Sube/baja  el primer pasajero;' +
+      'Sube/baja el último pasajero;' +
+      'Egresa;' +
+      '¿Cuántos subieron?;' +
+      '¿Cuántos bajaron?;' +
       'Sentido;' +
       'Ingreso por carril de operacion;' +
       'Se detuvo en el semaforo;' +
@@ -24,7 +24,7 @@ angular.module('tracker')
       'Ascensos por puerta del medio;' +
       'Operacion fuera de parador;' +
       'Demorado por inspector;' +
-      'Otras observaciones';
+      'Observaciones';
 
     function toCSV(instance) {
       var today = moment().format('DD-MM-YYYY');
