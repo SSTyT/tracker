@@ -9,7 +9,8 @@ angular.module('tracker')
       controllerAs: 'ctrl',
       params: {
         station: {},
-        user: ''
+        user: '',
+        direction: ''
       }
     });
 
@@ -35,7 +36,9 @@ angular.module('tracker')
             milestone.create('Sube/baja el último pasajero', true),
             milestone.create('Egresa', false),
           ],
-          data: {},
+          data: {
+            direction: $state.params.direction
+          },
           milestoneIndex: 0,
           finished: false
         };

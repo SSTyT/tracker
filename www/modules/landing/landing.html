@@ -5,6 +5,15 @@
             <span class="input-label">Relevador</span>
             <input ng-model="data.user" type="text" placeholder=""></input>
         </label>
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Sentido
+            </div>
+            <select ng-model="data.direction">
+                <option value="ascendente">Ascendente</option>
+                <option value="descendente">Descendente</option>
+            </select>
+        </label>
     </ion-content>
     <ion-footer-bar>
         <button ng-disabled="trackDisabled(data)" on-tap="track(data)" class="button button-full button-dark">Relevar</button>

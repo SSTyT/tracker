@@ -31,7 +31,7 @@ angular.module('tracker')
     };
 
     $scope.trackDisabled = function(data) {
-      return !data.station || !data.user;
+      return !data.station || !data.user || !data.direction;
     };
 
   }]);
